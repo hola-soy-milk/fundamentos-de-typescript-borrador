@@ -1,0 +1,29 @@
+{
+    "root": true,
+    "plugins": ["svelte3", "@typescript-eslint"],
+    "parser": "@typescript-eslint/parser",
+    "overrides": [
+      {
+        "files": ["*.svelte"],
+        "processor": "svelte3/svelte3"
+      }
+    ],
+    "settings": {
+      "svelte3/typescript": true, // load TypeScript as peer dependency
+      // ...
+    },
+    "rules": { 
+      "@typescript-eslint/no-explicit-any": "off"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "project": ["./tsconfig.json"],
+      "extraFileExtensions": [".svelte"]
+    },
+    "env": {
+      "es6": true,
+      "browser": true
+    },
+    "ignorePatterns": ["node_modules"]
+  }

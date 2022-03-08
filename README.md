@@ -33,8 +33,8 @@ Este workshop asume dos cosas:
 
 Recomiendo tener instalado:
 
-- git versión 2.34.1 o mayor
-- NodeJS versión 12.18.4 o mayor
+- [git](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git) versión 2.34.1 o mayor
+- [NodeJS](https://nodejs.org/es/) versión 12.18.4 o mayor
 
 Para cada lección, puedes echar a andar el código con:
 

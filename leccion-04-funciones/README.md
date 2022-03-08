@@ -65,7 +65,7 @@ Agreguemos en el nuevo archivo `./src/utils/formatters.ts`. Tendrá una función
 
 ### 3. Darle tipos a los argumentos de la función anónima
 
-Volvamos a `./src/components/PostList.tsx`, donde encontraremos una función anónima en la linea 7:
+Volvamos a `./src/components/PostList.tsx`, donde encontraremos una función anónima en la linea 8:
 
 ```typescript
 let rows = posts.map((post, index) => {

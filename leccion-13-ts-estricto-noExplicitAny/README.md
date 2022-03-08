@@ -196,7 +196,7 @@ npm run lint
 npm run check
 ```
 
-## 🤔 Reflecciones
+## 🤔 Reflexiones
 
 - ¿Cuales son las ventajas de hacer linting?
 - ¿Cual es la ventaja de prohibir el `any` explícito? 

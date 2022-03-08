@@ -184,7 +184,7 @@ svelte-check found 0 errors, 0 warnings, and 0 hints
 
 ¡Ah, ya! También funciona.
 
-## 🤔 Reflecciones
+## 🤔 Reflexiones
 
 ### ¿Pero por qué hacer esto, que tiene de conveniente?
 

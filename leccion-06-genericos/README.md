@@ -24,7 +24,7 @@ function generico(elem: any): string {
 
 Pero supongamos un ejemplo donde los tipos de varios argumentos pueden ser cualquiera, pero los mismos:
 
-```
+```typescript
 function generico<T>(elem1: T, elem2: T): void {
     console.log(elem1, elem2);
 }

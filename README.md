@@ -36,7 +36,7 @@ Recomiendo tener instalado:
 - git versión 2.34.1 o mayor
 - NodeJS versión 12.18.4 o mayor
 
-To run the code for each lesson:
+Para cada lección, puedes echar a andar el código con:
 
     $ npm install
 

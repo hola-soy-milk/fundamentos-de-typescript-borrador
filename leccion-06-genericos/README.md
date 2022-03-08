@@ -109,10 +109,6 @@ En `./frontend/src/utils/api.ts`, cambiemos los nombres y firmas de las funcione
 
 Tambíen tendrás que modificar las funcones para que usen el `resourceURL`. 
 
-### 2. Integra el `Sender` en el `Post`
-
-Volvamos a `./src/types/Post.ts`, donde integraremos una propiedad `sender` que reemplazará `name` y `handle`.
-
 ### Crédito extra: `axios` genérico
 
 Para hacer nuestras peticiones HTTP, usamos la librería `axios`. Esta también nos permite hacer `get` y `post` con `genéricos`. ¡Cambiémoslos!

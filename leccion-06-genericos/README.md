@@ -22,7 +22,7 @@ function generico(elem: any): string {
 }
 ```
 
-Pero propongamos un ejemplo donde los tipos de varios argumentos pueden ser cualquiera, pero los mismos:
+Pero supongamos un ejemplo donde los tipos de varios argumentos pueden ser cualquiera, pero los mismos:
 
 ```
 function generico<T>(elem1: T, elem2: T): void {

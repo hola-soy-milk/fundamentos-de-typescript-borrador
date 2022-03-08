@@ -12,9 +12,9 @@ Para poder tener una buena idea de como usar el lenguaje en la vida real, hemos 
 
 ## 💜 ¡Hola, soy Ramón!
 
-Soy ingenerio de software, developer relations e instructor de programación viviendo en Viena, Austria. Llevo más de diez años ayudando a startups y compañias realizar sus apps o mantenerlos. ¡Les he enseñado a programar a más de 10 mil personas por todo el mundo!
+Soy ingenerio de software, developer relations e instructor de programación viviendo en Viena, Austria. Llevo más de diez años ayudando a startups y compañias realizar sus apps o a mantenerlas. ¡Les he enseñado a programar a más de 10 mil personas por todo el mundo!
 
-Mi motivador principal son las comunidades tech. Dedico una gran mayoría de mi tiempo ayudando a gente empezando o avanzada en sus carrera, y organisando conferencias, talleres, meetups y otros eventos con la meta de elevar a otros!
+¡Mi motivador principal son las comunidades tech. Dedico una gran catidad de mi tiempo ayudando a gente empezando o está avanzando en sus carrera; y organisando conferencias, talleres, meetups y otros eventos con la meta de elevar a otros!
 
 ¡Ponte en contacto! Mi Twitter es [@hola_soy_milk](https://twitter.com/hola_soy_milk).
 

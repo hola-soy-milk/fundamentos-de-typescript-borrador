@@ -6,7 +6,7 @@ Esta vez, en vez de cambiar la configuración de `tsconfig`, vamos a cambiar nue
 
 ### ¿Qué es ESLint?
 
-[ESLint](https://eslint.org/) es una herramienta de analisis estático que revisa nuestros archivos de JavaScript (y TypeScript) para encontrar problemas y con eso evitar introducir bugs en el futuro. Tambien ayuda al equipo a tener una base de código a tener un estilo consistente.
+[ESLint](https://eslint.org/) es una herramienta de análisis estático que revisa nuestros archivos de JavaScript (y TypeScript) para encontrar problemas y con eso evitar introducir bugs en el futuro. También ayuda al equipo a tener una base de código y a tener un estilo consistente.
 
 Nuestro proyecto ya tiene ESLint instalado e incluso lo hemos estado usando en `package.json`:
 
@@ -20,7 +20,7 @@ Nuestro proyecto ya tiene ESLint instalado e incluso lo hemos estado usando en `
 
 ### `.eslintrc`
 
-Podemos configurar las opciones de ESLint con el archivo `./.eslintrc` específico para nuestro proyecto.
+Podemos configurar las opciones de ESLint con el archivo `./.eslintrc`, archivo específico para nuestro proyecto.
 
 Entre ellas, hemos configurado ESLint para que funcione con TypeScript y Svelte, pero en esta lección vamos a enfocarnos en una:
 
@@ -30,17 +30,17 @@ Entre ellas, hemos configurado ESLint para que funcione con TypeScript y Svelte,
     },
 ```
 
-`@typescript-eslint/no-explicit-any` es [una de las varias](https://typescript-eslint.io/rules/) reglas existentes para TypeScript en ESLint.
+`@typescript-eslint/no-explicit-any` es [una de las varias](https://typescript-eslint.io/rules/) reglas existentes para TypeScript en ESLint
 
 Con estas podemos declarar uno de tres niveles de error:
 
 - `0` o `"off'`: Ignorar el error
 - `1` o `"warn"`: Advertir al usuario del error, pero no bloquear
-- `2` o `"error"`: Advertir al usuario del error, y también bloquear
+- `2` o `"error"`: Advertir al usuario del error y también bloquear
 
 ### ¿Qué ha cambiado en nuestro proyecto?
 
-El cambio más grande es el uso de un nuevo tipo que se usa para resumir cuantos dulces se encuentran en el carrito:
+El cambio más grande es el uso de un nuevo tipo que se usa para resumir cuántos dulces se encuentran en el carrito:
 
 ```typescript
 export interface GroupedCartItem {
@@ -50,17 +50,17 @@ export interface GroupedCartItem {
 }
 ```
 
-Este es el tipo de retorno de `groupedItems()`.
+Este es el tipo de retorno de `groupedItems()`
 
 ## 🥅 Metas
 
-En esta lección, vamos a mejorar nuestro código con la regla de ESLint `noExplicitAny`.
+En esta lección, vamos a mejorar nuestro código con la regla de ESLint `noExplicitAny`
 
 ## 🤸 Ejercicios
 
 ### 1. Arreglar las pruebas
 
-Echar a andar `npm run test` nos entrega:
+Al correr `npm run test`, se nos entrega:
 
 ```bash
 > svelte-app@1.0.0 test
@@ -76,11 +76,11 @@ Time:        2.891 s, estimated 5 s
 Ran all test suites matching /src/i.
 ```
 
-Ah, bueno! Se ve bién.
+¡Ah, bueno! Se ve bién.
 
 ### 2. Arreglar el linting
 
-Correr `npm run lint` nos presenta:
+Al correr `npm run lint`, se nos entrega:
 
 ```bash
 > svelte-app@1.0.0 lint
@@ -107,9 +107,9 @@ Correr `npm run lint` nos presenta:
 
 Veamos `./src/types/Candy.ts`, hay errores en la línea 2 y 3, donde tenemos `any`. ¡El `priceCents` y `name` necesitan tipos!
 
-Hagamos lo mismo en `./src/types/ShoppingCart.ts`. El `GroupedCartItem` tiene sus 3 propiedades con tipos `any`. Arreglémoslo!
+Hagamos lo mismo en `./src/types/ShoppingCart.ts`. El `GroupedCartItem` tiene sus 3 propiedades con tipos `any`. ¡Arreglémoslo!
 
-De ahí, la clase `ShoppingCart` tiene una propiedad `items` con tipo `any[]`, pero sabemos que son una lista de `Candy`. Importémoslo y usémoslo! De ahí, todos los `any`s tendrán su tipo.
+De ahí, la clase `ShoppingCart` tiene una propiedad `items` de tipo `any[]`, pero sabemos que son una lista de `Candy`. ¡Importémoslo y usémoslo! De ahí, todos los `any` tendrán su tipo.
 
 En la línea 28, tenemos: 
 
@@ -175,7 +175,7 @@ class TestCandy extends Candy {
 }
 ```
 
-Por ejemplo, lo podemos usar en la segundo prueba:
+Por ejemplo, lo podemos usar en la segunda prueba:
 
 ```typescript
 test("Adding item to cart successfully", () => {
@@ -198,6 +198,6 @@ npm run check
 
 ## 🤔 Reflexiones
 
-- ¿Cuales son las ventajas de hacer linting?
-- ¿Cual es la ventaja de prohibir el `any` explícito? 
-- ¿Es bueno que la clase `ShoppingCart` dependa de `Candy`, que pasa si quieremos tener otras clases de productos?
+- ¿Cuáles son las ventajas de hacer linting?
+- ¿Cuál es la ventaja de prohibir el `any` explícito? 
+- ¿Es bueno que la clase `ShoppingCart` dependa de `Candy`?, ¿qué pasa si quieremos tener otras clases de productos?

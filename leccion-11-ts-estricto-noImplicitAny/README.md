@@ -1,16 +1,16 @@
-# Unidad 3, Lección 11: TypeScript Estricto: `noImplicitany`
+# Unidad 3, Lección 11: TypeScript Estricto: `noImplicitAny`
 
 ¡Felicidades! Has terminado la segunda unidad de TypeScript IRL. Ahora verémos la tercera:
 
 ## Unidad 3: De una buena a una gran base de código TypeScript
 
-Nuestra última aplicación será de comercio electrónico. ¡Una tienda de dulces! Ya está desarrollada, y puedes agregar dulces al carrito:
+Nuestra última aplicación será de comercio electrónico. ¡Una tienda de dulces! Ya está desarrollada y puedes agregar dulces al carrito:
 
 ![Cáptura de pantalla de la tienda de dulces con chocolates, caramelos y mazapán disponible](https://user-images.githubusercontent.com/656318/154029420-aad5b015-cd28-483d-944f-b84eba885fe1.png)
 
-La tienda de dulces ya esta finalizada y desarrollada, y en esta unidad vamos a activar distintos modos estrictos de TypeScript y mejorar nuestro código.
+La tienda de dulces ya esta finalizada y desarrollada y en esta unidad vamos a activar distintos modos estrictos de TypeScript para mejorar nuestro código.
 
-> Ojo: Esta app está escrita con [Svelte](https://svelte.dev/), un framework de frontend. Tal como en la primera y segunda unidad, no es necesario completamente conocer Svelte para completar este workshop. ¡Te guiaremos por todo lo necesario para triunfar!
+> Ojo: Esta app está escrita con [Svelte](https://svelte.dev/), un framework de frontend. Tal como en la primera y segunda unidad, no es necesario conocer completamnete Svelte para completar este workshop. ¡Te guiaremos por todo lo necesario para triunfar!
 
 ## 🐾 Primeros Pasos
 
@@ -24,10 +24,10 @@ Esta aplicación tiene 3 componentes principales:
 
 Tambien trae 2 tipos:
 
-- `./src/types/Candy.ts`: Declaracion de las clases de dulces que tendremos, con una jerarquia abstracta
+- `./src/types/Candy.ts`: Declaración de las clases de dulces que tendremos, con una jerarquía abstracta
 - `./src/types/ShoppingCart.ts`: La clase `ShoppingCart` mantiene una lista de `items` de dulces
 
-Y tambien, por primera vez, tenemos pruebas! Fueron escritas con TypeScript y [Jest](https://jestjs.io/):
+Y también, por primera vez, tenemos ¡pruebas! Que fueron escritas con TypeScript y [Jest](https://jestjs.io/):
 
 - `./src/types/Candy.test.ts`: Pruebas para el tipo `Candy`
 - `./src/types/ShoppingCart.test.ts`: Pruebas para el tipo `ShoppingCart`
@@ -70,7 +70,7 @@ En esta unidad, vamos a activar un par de estas reglas e ir arreglando el códig
 
 ### `noImplicitAny`
 
-Esta regla no permite tener inferencia de tipos. Por ejemplo:
+Esta regla nos permite tener inferencia de tipos. Por ejemplo:
 
 ```typescript
 const porDos = (numero) => numero * 2;
@@ -90,9 +90,9 @@ En esta lección, vamos a mejorar nuestro código con la regla `noImplicitAny`.
 
 ## 🤸 Ejercicios
 
-### 1. Chequeos del codigo
+### 1. Chequeos del código
 
-Arreglemos nuestra base de codigo para que los siguientes comandos funcionen:
+Arreglemos nuestra base de código para que los siguientes comandos funcionen:
 
 ```bash
 npm run test
@@ -103,12 +103,12 @@ npm run check
 Examinemos los tres:
 
 - `npm run test` echa a andar las pruebas
-- `npm run lint` echa a andar el linter [`ESLint`](https://eslint.org/) para hacer analisis estatico
-- `npm run check` echa a andar la herramienta [`svelte-check`](https://github.com/sveltejs/language-tools/tree/master/packages/svelte-check) para verificar que nuestro codigo Svelte funciona
+- `npm run lint` echa a andar el linter [`ESLint`](https://eslint.org/) para hacer análisis estático
+- `npm run check` echa a andar la herramienta [`svelte-check`](https://github.com/sveltejs/language-tools/tree/master/packages/svelte-check) para verificar que nuestro código Svelte funciona correctamente
 
 ### 2. Arreglar las pruebas
 
-Correr `npm run test` este nos da:
+Al correr `npm run test`, se nos presenta:
 
 ```bash
 > svelte-app@1.0.0 test
@@ -155,18 +155,18 @@ Arreglemos estos dandoles el tipo `any` o `any[]`.
 
 ### 3. Arreglar el linting
 
-Correr `npm run lint` nos presenta:
+Al correr `npm run lint`, se nos presenta:
 
 ```bash
 > svelte-app@1.0.0 lint
 > eslint . --ext .ts
 ```
 
-Ah, bueno! Se ve bién.
+¡Ah, bueno! Se ve bién
 
 ### 4. Arreglar el check
 
-Correr `npm run check` nos presenta:
+Al correr `npm run check`, se nos presenta:
 
 ```bash
 
@@ -186,7 +186,7 @@ svelte-check found 0 errors, 0 warnings, and 0 hints
 
 ## 🤔 Reflexiones
 
-### ¿Pero por qué hacer esto, que tiene de conveniente?
+### ¿Pero porqué hacer esto, que tiene de conveniente?
 
 A medida que iremos activando estas reglas, veremos que el código se irá mejorando en el sentido de seguridad de tipos y legibilidad del código. 
 

@@ -2,7 +2,7 @@
 
 Ahora que instalamos TypeScript, ¡es hora de empezar a usarlo!
 
-El comportamiento de TypeScript se define con el archivo de configuración `tsconfig.json`, donde podemos definir, por ejemplo, a que clase de JavaScript compilamos, que extensiones de archivos incluimos, etc.  
+El comportamiento de TypeScript se define con el archivo de configuración `tsconfig.json`, donde podemos definir, por ejemplo; a que clase de JavaScript compilamos, que extensiones de archivos incluimos, etc.  
 
 ## 🥅 Metas
 
@@ -18,7 +18,7 @@ Debido a que TypeScript es un superconjunto de JavaScript, no nos afectará camb
 
 Si no conoces `JSX`, ¡no te preocupes! Son archivos especiales que se usan a menudo con React. No es requisito conocer JSX para este curso. 
 
-> ¡Por cierto, recomiendo el [curso de Matías para aprender React](https://www.escuelafrontend.com/react)!
+> ¡Por cierto, te recomiendo el [curso de Matías para aprender React](https://www.escuelafrontend.com/react)!
 
 ### 3. Generar `tsconfig.json`
 
@@ -26,13 +26,13 @@ Al instalar el paquete de TypeScript, nos da acceso a la herramienta CLI `tsc`. 
 
     $ ./node_modules/.bin/tsc --init
     
-Este creará el archivo `tsconfig.json`. Cambiémoslo para que el modo estricto no esté activado. En la línea 77:
+Esto creará el archivo `tsconfig.json`. Cambiémoslo para que el modo estricto no esté activado. En la línea 77:
 
 ```json
     "strict": false, 
 ```
 
-Nuestra última tarea será activar el modo react para la configuración. Agreguemos esta linea dentro de `"compilerOptions"`:
+Nuestra última tarea será activar el modo react para la configuración. Agreguemos esta línea dentro de `"compilerOptions"`:
 
 ```json
     "jsx": "react",

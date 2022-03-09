@@ -6,7 +6,7 @@ En esta lección nos encontramos con el próximo concepto más grande que introd
 
 ### ¿Qué son los genéricos?
 
-Si has leido o visto ejemplos de TypeScript, seguro que has visto el tipo `T`. a esto se le llama "genérico". Nos permite definir funciones, clases u otros que funcionan con cualquier tipo. Por ejemplo:
+Si has leido o visto ejemplos de TypeScript, seguro que has visto el tipo `T`. A esto se le llama "genérico". Nos permite definir funciones, clases u otros que funcionan con cualquier tipo. Por ejemplo:
 
 ```typescript
 function generico<T>(elem: T): string {

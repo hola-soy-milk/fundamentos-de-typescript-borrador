@@ -2,7 +2,7 @@
 
 ¡A continuación, vamos a agregarle aún más seguridad a nuestra aplicación!
 
-Vamos a aprender sobre propiedades opcionales, tipos unión e intersección, y guardias de tipos.
+Vamos a aprender sobre propiedades opcionales, tipos unión e intersección y guardias de tipos.
 
 ## 🐾 Primeros Pasos
 
@@ -18,7 +18,7 @@ class Persona {
 }
 ```
 
-Aquí podemos ver que la clase tiene una propiedad `nombre`, pero la de `edad` tiene un signo de interrogación. Esto quiere decir que es una propiedad opcional. Puede ser de tipo `number` o `undefined. O sea, si creamos una instancia de `Persona`, no requiere que se defina una edad. Por ejemplo:
+Aquí podemos ver que la clase tiene una propiedad `nombre`, pero la de `edad` tiene un signo de interrogación. Esto quiere decir que es una propiedad opcional. Puede ser de tipo `number` o `undefined`. O sea, si creamos una instancia de `Persona`, no requiere que se defina una edad. Por ejemplo:
 
 ```typescript 
 const humano: Persona = new Persona("Mirabel");
@@ -40,7 +40,7 @@ if (humano.edad) {
 }
 ```
 
-Con esta, podemos tener por seguro que la edad se haya definido.
+Con esto, podemos tener por seguro que la edad se haya definido.
 
 ### ¿Qué ha cambiado en esta lección?
 
@@ -52,8 +52,8 @@ die?: Die;
 
 Si tratamos de construir la aplicación con el comando:
 
-   $ npm run build
-   
+     $ npm run build
+
 Veremos que falla con un error:
 
 ```bash
@@ -64,7 +64,6 @@ src/types/Dice.ts:12:12 - error TS2532: Object is possibly 'undefined'.
 
 12     return this.die.value();
               ~~~~~~~~
-
 
 Found 1 error.
 ```
@@ -77,13 +76,13 @@ En esta lección, vamos a arreglar nuestra aplicación usando una guardia de tip
 
 ### 1. ¿Qué pasa si no hay lado de dado?
 
-En el caso donde `die` sea undefined, lanzemos un error que diga "Imposible no tener lado de dado". Lanzar un error es igual que en JavaScript:
+En el caso donde `die` sea `undefined`, lanzemos un error que diga "Imposible no tener lado de dado". Lanzar un error es igual que en JavaScript:
 
 ```typescript
 throw new Error(message);
 ```
 
-### Credito extra
+### Crédito extra
 
 ¡Pongámos nuestra nueva propiedad opcional en práctica!
 
@@ -95,4 +94,4 @@ Cambiemos la firma de nuestra función `dieForValue` en la línea 15:
 
 El valor de retorno de `dieForValue` ahora puede ser de tipo `Die` o `undefined`. Esto se llama un **tipo unión**.
 
-Ahora podemos cambiarlo a que el `switch` por defecto retorne un `undefined`.
+Ahora podemos cambiarlo para que el `switch` por defecto retorne un `undefined`.

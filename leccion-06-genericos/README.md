@@ -4,9 +4,9 @@ En esta lección nos encontramos con el próximo concepto más grande que introd
 
 ## 🐾 Primeros Pasos
 
-### ¿Qué son genéricos?
+### ¿Qué son los genéricos?
 
-Si has leido o visto ejemplos de TypeScript, seguro que has visto el tipo `T`. Este se llama un genérico. Nos permite definir funciones, clases u otras que funcionan con cualquier tipo. Por ejemplo:
+Si has leido o visto ejemplos de TypeScript, seguro que has visto el tipo `T`. A esto se le llama "genérico". Nos permite definir funciones, clases u otros que funcionan con cualquier tipo. Por ejemplo:
 
 ```typescript
 function generico<T>(elem: T): string {
@@ -22,7 +22,7 @@ function generico(elem: any): string {
 }
 ```
 
-Pero supongamos un ejemplo donde los tipos de varios argumentos pueden ser cualquiera, pero los mismos:
+Pero supongamos un caso donde los tipos de varios argumentos pueden ser cualquiera, pero los mismos:
 
 ```typescript
 function generico<T>(elem1: T, elem2: T): void {
@@ -30,12 +30,12 @@ function generico<T>(elem1: T, elem2: T): void {
 }
 ```
 
-Con esta función, invocar los siguentes funcionan sin problema:
+Con esta función, los siguentes funcionan sin problema:
 - `generico(1, 2);`
 - `generico("perro", "gato");`
 - `generico(true, false);`
 
-Pero esto no:
+Pero estos no:
 - `generico(1, '2');`
 - `generico("perro", 4);`
 - `generico(true, 'false');`
@@ -44,9 +44,9 @@ Con el uso de genéricos, podemos asegurarnos que los dos argumentos tendrán el
 
 > **Ojo**: Seguro que te hayas preguntado por qué usamos la letra `T`. ¡Es nada más que una convención! Incluso, en otros lenguajes capáz que hayas visto el uso de `G`.
 
-## ¿Que ha cambiado en esta lección?
+## ¿Qué ha cambiado en esta lección?
 
-¡Quizas el cambio más grande es que nuestra aplicación ahora tiene un backend!
+¡Quizás el cambio más grande es que nuestra aplicación ahora tiene un backend!
 
 Enfoquémosnos en el frontend, como siempre:
 
@@ -79,7 +79,7 @@ En esta lección, vamos a reemplazar las funciones del módulo `api` con genéri
 
 ### 1. Renombrar funciones
 
-Si miramos en `./frontend/src/App.tsx`, podemos ver el nuevo uso esperado del `api`:
+Si miramos en `./frontend/src/App.tsx`, podemos ver el nuevo uso esperado de la `api`:
 
 ```typescript
 import { getRequest, postRequest } from './utils/api';
@@ -107,7 +107,7 @@ En `./frontend/src/utils/api.ts`, cambiemos los nombres y firmas de las funcione
 - `getPost` pasa a ser `getRequest` que es genérico `T` y acepta un argumento string `resourceURL`
 - `postPost` pasa a ser `postRequest` que es genérico `T` y acepta dos argumentos: un `data` tipo `T` y un string `resourceURL`
 
-Tambíen tendrás que modificar las funcones para que usen el `resourceURL`. 
+Tambíen tendrás que modificar las funciones para que usen el `resourceURL`. 
 
 ### Crédito extra: `axios` genérico
 

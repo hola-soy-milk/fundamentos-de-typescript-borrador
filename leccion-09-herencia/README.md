@@ -1,6 +1,6 @@
 # Unidad 2, Lección 9: Herencia
 
-En esta lección camos a crear una jerarquía de distintos lados de dados y asignarselos a un `DiceWrapper`, encapsulando y grabando su valor.
+En esta lección vamos a crear una jerarquía de distintos lados del dados y asignarselos a un `DiceWrapper`, encapsulando y grabando su valor.
 
 ## 🐾 Primeros Pasos
 
@@ -68,7 +68,7 @@ class Perro extends Animal {
 }
 ```
 
-## ¿Que ha cambiado en esta lección?
+## ¿Qué ha cambiado en esta lección?
 
 ¡Ha cambiado bastante el archivo `./src/types/Dice.ts`! En la línea 2, encontrarás una nueva propiedad:
 
@@ -76,7 +76,7 @@ class Perro extends Animal {
 die: Die;
 ```
 
-También verás que cambió el constructor y `value`, y agregamos `dieForValue`:
+También verás que cambió el constructor y el `value`, además agregamos `dieForValue`:
 
 ```typescript
   constructor(sides: number = 6) {
@@ -131,6 +131,6 @@ En `./src/types/Dice.ts`, debajo de la clase `DiceWrapper`, agrega la clase abst
 
 Agrega las seis subclases que mencionamos antes, cada una con una implementación de `value()` que retorna un valor correspondiente al número.
 
-### Credito extra
+### Crédito extra
 
 Agrega `SevenDie` y `EightDie`. ¿Qué nos falta para poder usarlos?

@@ -14,7 +14,7 @@ const publicarAdicion = (x: number, y: number) => {
 };
 ```
 
-No sólo eso, pero también permiten definir un tipo de retorno, y con esto asegurar que la función nos da lo que dice:
+No sólo eso, sino que también, permiten definir un tipo de retorno y con esto asegurar que la función nos da lo que dice:
 
 ```typescript
 const adicion = (x: number, y: number): number => x + y;
@@ -26,7 +26,7 @@ Pero ¿qué pasa cuando no definimos un tipo de retorno? En JavaScript, una func
 console.log(typeof publicarAdicion(1, 2))); // => undefined
 ```
 
-Sin embargo, `undefined` es un valor, no un tipo! En este caso, podemos definir el tipo de retorno de una función que no devuelve nada como `void`:
+Sin embargo, `undefined` es un valor, ¡no un tipo! En este caso, podemos definir el tipo de retorno de una función que no devuelve nada como `void`:
 
 ```typescript
 const publicarAdicion = (x: number, y: number): void => {
@@ -61,7 +61,7 @@ Y la usamos en la línea 11:
 Agreguemos en el nuevo archivo `./src/utils/formatters.ts`. Tendrá una función formatPostTimestamp:
 
 - Toma como argumento un `post` de tipo `Post`
-- Retorna un `Date` formatteado: `return new Date(post.timestamp).toLocaleString("es");`
+- Retorna un `Date` formateado: `return new Date(post.timestamp).toLocaleString("es");`
 
 ### 3. Darle tipos a los argumentos de la función anónima
 

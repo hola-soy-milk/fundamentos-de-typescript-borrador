@@ -27,7 +27,7 @@ const perrito: {
 Object is possibly 'undefined'
 ```
 
-En este caso, vemos que el tipo de `perrito` es un tipo unión: `{ nombre: string } | undefined`.
+En este caso, vemos que el tipo de `perrito` es de tipo unión: `{ nombre: string } | undefined`.
 
 Sin la regla activada, TypeScript ignorará el `undefined`.
 
@@ -36,7 +36,6 @@ Sin la regla activada, TypeScript ignorará el `undefined`.
 Hemos trabajado antes con esta situación. Quizás ya tengas la solución en mente: ¡Guardias de tipos!
 
 Arreglemos nuestro código:
-
 
 ```typescript
 const animales = [
@@ -50,7 +49,7 @@ if (perrito) {
 }
 ```
 
-Ahora funciona sin problema.
+Ahora funciona sin problemas
 
 ## 🥅 Metas
 
@@ -95,18 +94,18 @@ Todas las fallas estan situadas en `./src/types/ShoppingCart.ts`. ¡Arreglémosl
 
 ### 2. Arreglar el linting
 
-Correr `npm run lint` nos presenta:
+Al correr `npm run lint`, se nos presenta:
 
 ```bash
 > svelte-app@1.0.0 lint
 > eslint . --ext .ts
 ```
 
-Ah, bueno! Se ve bién.
+¡Ah, bueno! Se ve bién
 
 ### 3. Arreglar el check
 
-Correr `npm run check` nos presenta:
+Al correr `npm run check`, se nos presenta:
 
 ```bash
 
@@ -122,4 +121,4 @@ Getting Svelte diagnostics...
 svelte-check found 0 errors, 0 warnings, and 0 hints
 ```
 
-¡Ah, ya! También funciona.
+¡Ah, ya! También funciona

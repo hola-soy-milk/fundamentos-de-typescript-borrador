@@ -31,7 +31,7 @@ En esta lección, vamos a:
 
 Crea un nuevo archivo `./src/types/Sender.ts` y exporta una nueva interfaz Sender con 3 propiedades.
 
-🤔 ¿Cuales son?
+🤔 ¿Cuáles son?
 
 ### 2. Integra el `Sender` en el `Post`
 
@@ -39,7 +39,7 @@ Volvamos a `./src/types/Post.ts`, donde integraremos una propiedad `sender` que 
 
 ### Crédito extra: Prop Types
 
-Ahora mismo las propiedades del `Sender` son `any` de manera implícita. Qué tipos tendrán?
+Ahora mismo las propiedades del `Sender` son `any` de manera implícita. ¿Qué tipos tendrán?
 
 ## 🤔 Reflexiones
 

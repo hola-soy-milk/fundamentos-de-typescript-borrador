@@ -6,20 +6,20 @@
 
 Nuestra aplicación esta vez es un juego de dados. Si te sale menos de 21, ¡ganaste! 
 
-![Cáptura de la aplicación de jugar al 21, que muestra los cuatro dados, el valor de ganador, y el botón de tirar los dados de nuevo](https://user-images.githubusercontent.com/656318/152707507-1e6ae41f-d36f-4505-a4df-7d6d2f97dfc1.png)
+![Cáptura de la aplicación de jugar al 21, que muestra los cuatro dados, el valor del ganador y el botón de tirar los dados de nuevo](https://user-images.githubusercontent.com/656318/152707507-1e6ae41f-d36f-4505-a4df-7d6d2f97dfc1.png)
 
-> Ojo: Esta app está escrita con [Vue.js](https://vuejs.org/). Tal como en la primera unidad, no necesario completamente conocer Vue para completar este workshop. ¡Te guiaremos por todo lo necesario para triunfar!
+> Ojo: Esta app está escrita con [Vue.js](https://vuejs.org/). Tal como en la primera unidad, no es necesario conocer Vue completamente para completar este workshop. ¡Te guiaremos por todo lo necesario para triunfar!
 
 ## 🐾 Primeros Pasos
 
-Igual que en la primera unidad, puedes echar a andar al app con los siguientes comandos:
+Igual que en la primera unidad, puedes echar a andar la app con los siguientes comandos:
 
     $ npm install
     $ npm run dev
     
 Sin embargo, al tratar de abrir `http://localhost:3000`, ¡verás que nuestra app no funciona!
 
-En `./src/App.vue`, en las lineas 6-8, podemos ver que inicializamos nuestro estado con cuatro instancias de `DieWrapper`s:
+En `./src/App.vue`, en las lineas 6-8, podemos ver que inicializamos nuestro estado con cuatro instancias de `DieWrapper`:
 
 ```typescript
 import DieWrapper from './types/Dice'
@@ -56,7 +56,7 @@ class Perro {
 
 ## 🥅 Metas
 
-En esta lección vamos a declarar y ultilizar nuestra primera clase con TypeScript. Verémos que son muy similares a las de JavaScript.
+En esta lección vamos a declarar y a ultilizar nuestra primera clase con TypeScript. Verémos que son muy similares a las de JavaScript.
 
 ## 🤸 Ejercicios
 
@@ -70,4 +70,4 @@ Echa a andar el app con `npm run dev`. ¡Si todo salió bien podrás empezar a j
 
 ## 🤔 Reflexiones
 
-- ¿Que tipo de retorno tendrá `value()`?
+- ¿Qué tipo de retorno tendrá `value()`?

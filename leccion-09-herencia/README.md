@@ -115,7 +115,7 @@ También verás que cambió el constructor y el `value`, además agregamos `dieF
 En esta lección, vamos a agregar una clase abstracta llamada `Die` y sus subclases:
 
 - OneDie
-- TwiDie
+- TwoDie
 - ThreeDie
 - FourDie
 - FiveDie

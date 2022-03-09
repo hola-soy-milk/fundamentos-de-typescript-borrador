@@ -38,11 +38,11 @@ Agreguémosle una propiedad a `DiceWrapper` llamada `sides` que será del tipo `
 
 ### 2. Adaptar la función `value`
 
-En la lección anterior habíamos programado nuestro `DiceWrapper` para que tirase al azar un número entre 1 y 6 y lo guardará en `value`. Ahora lo vamos a adaptar a será entre 1 y el número de lados usando la palabra clave `this`.
+En la lección anterior habíamos programado nuestro `DiceWrapper` para que tirase al azar un número entre 1 y 6 y lo guardará en `value`. Ahora lo vamos a adaptar para que acepte entre 1 y el número de lados dados, usando la palabra clave `this`.
 
 ### Crédito extra: Propiedad privada
 
-En clases de TypeScript, podemos tener propiedades públicas y privadas usando las palabras claves `public` y `private. Volvámos a nuestro ejemplo de la clase `Perro`:
+En clases de TypeScript, podemos tener propiedades públicas y privadas usando las palabras claves `public` y `private`. Volvámos a nuestro ejemplo de la clase `Perro`:
 
 ```typescript
 class Perro {

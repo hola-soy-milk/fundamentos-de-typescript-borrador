@@ -86,7 +86,7 @@ throw new Error(message);
 
 ¡Pongámos nuestra nueva propiedad opcional en práctica!
 
-Cambiemos la firma de nuestra función `dieForValue` en la línea 15:
+Cambiemos la firma de nuestra función `dieForValue` en la línea 18:
 
 ```typescript
   private dieForValue(value: number): Die | undefined {

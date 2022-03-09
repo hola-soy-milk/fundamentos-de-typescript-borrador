@@ -54,7 +54,7 @@ class Perro {
 }
 ```
 
-Cambiémos elcódigo para que `nombre` sea una propiedad pública:
+Cambiémos el código para que `nombre` sea una propiedad pública:
 
 ```typescript
 class Perro {

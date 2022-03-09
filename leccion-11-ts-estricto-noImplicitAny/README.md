@@ -70,7 +70,7 @@ En esta unidad, vamos a activar un par de estas reglas e ir arreglando el códig
 
 ### `noImplicitAny`
 
-Esta regla nos permite tener inferencia de tipos. Por ejemplo:
+Esta regla bloquea tener inferencia de tipos. Por ejemplo:
 
 ```typescript
 const porDos = (numero) => numero * 2;

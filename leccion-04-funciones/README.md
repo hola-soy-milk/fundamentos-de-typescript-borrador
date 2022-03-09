@@ -26,7 +26,7 @@ Pero ¿qué pasa cuando no definimos un tipo de retorno? En JavaScript, una func
 console.log(typeof publicarAdicion(1, 2))); // => undefined
 ```
 
-Sin embargo, `undefined` es un valor, !no un tipo! En este caso, podemos definir el tipo de retorno de una función que no devuelve nada como `void`:
+Sin embargo, `undefined` es un valor, ¡no un tipo! En este caso, podemos definir el tipo de retorno de una función que no devuelve nada como `void`:
 
 ```typescript
 const publicarAdicion = (x: number, y: number): void => {

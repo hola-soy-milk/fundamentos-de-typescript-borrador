@@ -2,7 +2,7 @@
 
 ¡Felicidades! Has terminado la primera unidad de TypeScript IRL. Ahora verémos la segunda:
 
-## Unidad 2: Continuar desarrollando una aplicacíon TypeScript existente
+## Unidad 2: Continuar desarrollando una aplicación TypeScript existente
 
 Nuestra aplicación esta vez es un juego de dados. Si te sale menos de 21, ¡ganaste! 
 

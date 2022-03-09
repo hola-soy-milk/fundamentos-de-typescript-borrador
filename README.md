@@ -7,7 +7,7 @@
 Para poder tener una buena idea de como usar el lenguaje en la vida real, hemos divido el contenido en 3 unidades:
 
 - Cambiar una aplicación existente de JavaScript a TypeScript
-- Continuar desarrollando una aplicacíon TypeScript existente
+- Continuar desarrollando una aplicación TypeScript existente
 - De una buena a una gran base de código TypeScript
 
 ## 💜 ¡Hola, soy Ramón!

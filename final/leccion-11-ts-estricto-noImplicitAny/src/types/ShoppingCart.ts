@@ -13,9 +13,6 @@ export default class ShoppingCart {
   }
 
   groupedItems() {
-    if (!this.items) {
-      return [];
-    }
     return Object.values(
       this.items.reduce((cartItem, item) => {
         cartItem[item.name()] = cartItem[item.name()] || {
@@ -31,16 +28,10 @@ export default class ShoppingCart {
   }
 
   numberOfItems() {
-    if (!this.items) {
-      return 0;
-    }
     return this.items.length;
   }
 
   total() {
-    if (!this.items) {
-      return 0;
-    }
     return this.items.reduce((x, y) => x + y.priceCents(), 0);
   }
 }

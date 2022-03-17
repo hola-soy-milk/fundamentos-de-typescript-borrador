@@ -1,8 +1,8 @@
 import axios from "axios";
 import Post from "../types/Post";
 
-export async function getRequest<T>(resourceURL: string) {
-  const res = await axios.get(`http://localhost:6060/${resourceURL}`);
+export async function getRequest<T>(resourceURL: string): Promise<T[]> {
+  const res = await axios.get<T[]>(`http://localhost:6060/${resourceURL}`);
   if (res.status === 200) {
     return res.data;
   } else {
@@ -10,5 +10,5 @@ export async function getRequest<T>(resourceURL: string) {
   }
 }
 export async function postRequest<T>(data: T, resourceURL: string) {
-  await axios.post(`http://localhost:6060/${resourceURL}`, data);
+  await axios.post<T>(`http://localhost:6060/${resourceURL}`, data);
 }

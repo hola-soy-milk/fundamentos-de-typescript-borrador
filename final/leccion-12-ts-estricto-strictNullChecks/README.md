@@ -27,7 +27,7 @@ const perrito: {
 Object is possibly 'undefined'
 ```
 
-En este caso, vemos que el tipo de `perrito` es un tipo unión: `{ nombre: string } | undefined`.
+En este caso, vemos que el tipo de `perrito` es de tipo unión: `{ nombre: string } | undefined`.
 
 Sin la regla activada, TypeScript ignorará el `undefined`.
 
@@ -36,7 +36,6 @@ Sin la regla activada, TypeScript ignorará el `undefined`.
 Hemos trabajado antes con esta situación. Quizás ya tengas la solución en mente: ¡Guardias de tipos!
 
 Arreglemos nuestro código:
-
 
 ```typescript
 const animales = [
@@ -50,7 +49,7 @@ if (perrito) {
 }
 ```
 
-Ahora funciona sin problema.
+Ahora funciona sin problemas
 
 ## 🥅 Metas
 
@@ -91,97 +90,35 @@ Time:        3.23 s
 Ran all test suites matching /src/i
 ```
 
-Todas las fallas estan situadas en `./src/types/ShoppingCart.ts`. Arreglémoslas con 
+Todas las fallas estan situadas en `./src/types/ShoppingCart.ts`. ¡Arreglémoslas con guardias!
 
-### 2. Adaptar la función `value`
+### 2. Arreglar el linting
 
-El la lección anterior habíamos programado nuestro `DiceWrapper` a que tirase un numero entre 1 y 6 al azar en `value`. Ahora lo vamos a adaptar a ser entre 1 y el número de lados usando la palabra clave `this`.
+Al correr `npm run lint`, se nos presenta:
 
-### Crédito extra: Propiedad privada
-
-En clases de TypeScript, podemos tener propiedades públicas y privadas usando las palabras claves `public` y `private. Volvámos a nuestro ejemplo de la clase `Perro`:
-
-```typescript
-class Perro {
-   nombre: string;
-   
-   constructor(nombre: string) {
-      this.nombre = nombre;
-   }
-}
+```bash
+> svelte-app@1.0.0 lint
+> eslint . --ext .ts
 ```
 
-Cambiémosla para que nombre sea una propiedad pública:
+¡Ah, bueno! Se ve bién
 
-```typescript
-class Perro {
-   constructor(public nombre: string) {}
-}
+### 3. Arreglar el check
+
+Al correr `npm run check`, se nos presenta:
+
+```bash
+
+> svelte-app@1.0.0 check
+> svelte-check --tsconfig ./tsconfig.json
+
+
+====================================
+Loading svelte-check in workspace: /home/ramonh/coding/ts-course-draft/leccion-11-ts-estricto-noImplicitAny
+Getting Svelte diagnostics...
+
+====================================
+svelte-check found 0 errors, 0 warnings, and 0 hints
 ```
 
-Este es equivalente al anterior. 
-
-¡Se puede hacer con elementos privados tambien! 
-
-Tratemos de cambiar la propiedad `sides` de la clase `DiceWrapper` a ser privada.
-
-## 🤔 Reflexiones
-
-- ¿Qué beneficio hay en que una propiedad sea pública?
-
-
-Objetivo: Hacer pasar los strict null checks
-
-Verificar: 
-
-```
-    $ npm run test
-    $ npm run check
-    $ npm run lint
-```
-
-En `./src/models/ShoppingCart.ts`:
-
-```
-     groupedItems() {
--        return Object.values(this.items.reduce((cartItem, item) => {
--            cartItem[item.name()] = cartItem[item.name()] || {
--                name: item.name(),
--                quantity: 0,
--                priceCents: item.priceCents()
--            };
--            cartItem[item.name()].quantity += 1;
--            cartItem[item.name()].priceCents += item.priceCents();
--            return cartItem;
--        }, {}));
-+        if (this.items) {
-+            return Object.values(this.items.reduce((cartItem, item) => {
-+                cartItem[item.name()] = cartItem[item.name()] || {
-+                    name: item.name(),
-+                    quantity: 0,
-+                    priceCents: item.priceCents()
-+                };
-+                cartItem[item.name()].quantity += 1;
-+                cartItem[item.name()].priceCents += item.priceCents();
-+                return cartItem;
-+            }, {}));
-+        } else {
-+            return [];
-+        }
-     }
-
-     numberOfItems() {
--        return this.items.length;
-+        return this.items ? this.items.length : 0;
-     }
-
-     total() {
--        return this.items.reduce((x, y) => x + y.priceCents(), 0);
-+        if (this.items) {
-+            return this.items.reduce((x, y) => x + y.priceCents(), 0);
-+        } else {
-+            return 0;
-+        }
-     }
- }
-```
+¡Ah, ya! También funciona

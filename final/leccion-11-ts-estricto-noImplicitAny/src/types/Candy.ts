@@ -1,6 +1,6 @@
 export abstract class Candy {
-  abstract priceCents(): number;
-  abstract name(): string;
+  abstract priceCents(): any;
+  abstract name(): any;
 }
 
 class Chocolate extends Candy {

@@ -4,12 +4,12 @@
 import { ref } from 'vue'
 import DieWrapper from './types/Dice'
 import Die from './components/Die.vue'
-const roll = () => Array.from({length: 4}, () => new DieWrapper(100));
+const roll = () => Array.from({length: 4}, () => new DieWrapper(6));
 const dice = ref(roll());
 </script>
 
 <template>
-  <h1 class="top">¡Juguemos al 21!</h1>
+  <h1 class="top">¡Juguemos al 21 con dados de {{dice[0].sides}} lados!</h1>
   <div class="grid center">
     <Die v-for="die in dice" :faceValue="die.value()"/>
   </div>

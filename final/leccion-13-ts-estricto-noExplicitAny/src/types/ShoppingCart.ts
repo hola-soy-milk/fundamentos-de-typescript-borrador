@@ -25,9 +25,7 @@ export class ShoppingCart {
       return [];
     }
     return this.items.reduce((cartItems: GroupedCartItem[], item: Candy) => {
-      let cartItem: GroupedCartItem | undefined = cartItems.find(
-        (elem) => elem.name === item.name()
-      );
+      let cartItem = cartItems.find((elem) => elem.name === item.name());
       if (!cartItem) {
         cartItem = {
           name: item.name(),

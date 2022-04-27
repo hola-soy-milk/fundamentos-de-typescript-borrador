@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "felipe300",
+      "name": "Pipo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15917501?v=4",
+      "profile": "https://github.com/felipe300",
+      "contributions": [
+        "content"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "fundamentos-de-typescript",
+  "projectOwner": "ramonh",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

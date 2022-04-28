@@ -13,6 +13,18 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "ramonh",
+      "name": "Ramón Huidobro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/656318?v=4",
+      "profile": "https://ramonh.dev",
+      "contributions": [
+        "doc",
+        "content",
+        "example",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

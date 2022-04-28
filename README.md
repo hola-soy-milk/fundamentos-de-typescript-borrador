@@ -1,6 +1,6 @@
 # 🏃‍♀️ ¡Ya, a aprender!
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## 🔧 Fundamentos de TypeScript
@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/felipe300"><img src="https://avatars.githubusercontent.com/u/15917501?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pipo</b></sub></a><br /><a href="#content-felipe300" title="Content">🖋</a></td>
+    <td align="center"><a href="https://ramonh.dev"><img src="https://avatars.githubusercontent.com/u/656318?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ramón Huidobro</b></sub></a><br /><a href="https://github.com/ramonh/fundamentos-de-typescript/commits?author=ramonh" title="Documentation">📖</a> <a href="#content-ramonh" title="Content">🖋</a> <a href="#example-ramonh" title="Examples">💡</a> <a href="https://github.com/ramonh/fundamentos-de-typescript/commits?author=ramonh" title="Code">💻</a></td>
   </tr>
 </table>
 

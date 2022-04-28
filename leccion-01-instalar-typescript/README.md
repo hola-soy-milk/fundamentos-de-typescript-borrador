@@ -1,6 +1,6 @@
 # Unidad 1, Lección 1: Instalar TypeScript en una base de código JavaScript
 
-!Te doy la bienvenida a la primera unidad! 
+¡Te doy la bienvenida a la primera unidad! 
 
 En esta unidad vamos a convertir una aplicación de React escrita con JavaScript a TypeScript.
 

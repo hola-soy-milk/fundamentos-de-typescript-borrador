@@ -3,32 +3,33 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { ref } from 'vue'
 import DieWrapper from './types/Dice'
-import Die from './components/Die.vue'
 const roll = () => Array.from({length: 4}, () => new DieWrapper());
 const dice = ref(roll());
 </script>
 
 <template>
-  <h1 class="top">¡Juguemos al 21!</h1>
-  <div class="grid center">
-    <Die v-for="die in dice" :faceValue="die.value()"/>
+  <div id="game">
+    <h1 class="top">¡Juguemos al 21!</h1>
+    <div class="grid center">
+      <Die :key="die" v-for="die in dice" :faceValue="die.value()"/>
+    </div>
+    <h1>
+      {{dice.reduce((sum, die) => sum + die.value(), 0)}}
+      <span v-if="dice.reduce((sum, die) => sum + die.value(), 0) < 21">🎉</span>
+      <span v-else>😥</span>
+    </h1>
+    <button type="button" @click="dice = roll()">Tirar los dados</button>
   </div>
-  <h1>
-    {{dice.reduce((sum, die) => sum + die.value(), 0)}}
-    <span v-if="dice.reduce((sum, die) => sum + die.value(), 0) < 21">🎉</span>
-    <span v-else>😥</span>
-  </h1>
-  <button type="button" @click="dice = roll()">Tirar los dados</button>
 </template>
 
 <style>
-body, html {
+body, html, #app {
   height: 100%;
   width: 100%;
   background-color: #f0eeef;
   margin: 0;
   }
-#app {
+#game {
   height: 100%;
   display: flex;
   flex-direction: column;

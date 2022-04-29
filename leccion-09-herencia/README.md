@@ -134,3 +134,7 @@ Agrega las seis subclases que mencionamos antes, cada una con una implementació
 ### Crédito extra
 
 Agrega `SevenDie` y `EightDie`. ¿Qué nos falta para poder usarlos?
+
+### 🤔 Reflexiones
+
+Seguro que podríamos haber echo esto con un gran `if` statement. ¿Cuál es la ventaja de hacerlo con herencia?

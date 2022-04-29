@@ -116,4 +116,4 @@ Para hacer nuestras peticiones HTTP, usamos la librería `axios`. Esta también 
 ## 🤔 Reflexiones
 
 - ¿Podemos usar algo que no sea ni `T` ni `G` en nuestros genéricos?
-- ¿Qué tipos de retorno tienen las funciones de `api`?
+- ¿Qué tipos de retorno tienen las funciones de `api`? Ojo que el `get` retorna un arreglo.

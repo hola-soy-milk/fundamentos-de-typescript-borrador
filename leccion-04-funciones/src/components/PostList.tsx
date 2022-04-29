@@ -2,8 +2,7 @@ import React from 'react';
 import Post from '../types/Post';
 import {formatPostTimestamp} from '../utils/formatters'
 
-function PostList(props) {
-  let {posts} = props;
+function PostList({ posts }) {
 
   let rows = posts.map((post, index) => {
     return <div className="card" key={index}>

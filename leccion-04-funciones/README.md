@@ -81,7 +81,7 @@ En la línea 5, definimos nuestro componente con propiedades como un objeto:
 function PostList({posts}) {
 ```
 
-Extraigamos un interfaz local para los `Props` que tengan como propediad un arreglo de `posts`.
+Extraigamos un interfaz local para los `Props` que tengan como propediad un arreglo de `Post`s.
 
 ## 🤔 Reflexiones
 

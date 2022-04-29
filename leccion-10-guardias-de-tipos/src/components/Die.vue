@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Face from './Face.vue'
 
 defineProps<{ faceValue: number }>()
 

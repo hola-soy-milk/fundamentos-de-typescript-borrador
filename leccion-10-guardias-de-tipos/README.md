@@ -95,3 +95,7 @@ Cambiemos la firma de nuestra función `dieForValue` en la línea 18:
 El valor de retorno de `dieForValue` ahora puede ser de tipo `Die` o `undefined`. Esto se llama un **tipo unión**.
 
 Ahora podemos cambiarlo para que el `switch` por defecto retorne un `undefined`.
+
+## 🤔 Reflexiones
+
+¿De qué nos sirven las guardias de tipos?

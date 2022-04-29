@@ -1,6 +1,6 @@
-import {availableCandies} from '../Candy'
+import { availableCandies } from "../Candy";
 
-test("Retrieving all marshmallows for sale", () => {
+test("Retrieving all candies for sale", () => {
   expect(availableCandies.length).toBe(3);
 
   expect(availableCandies[0].priceCents()).toBe(99);

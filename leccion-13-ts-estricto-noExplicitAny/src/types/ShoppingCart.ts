@@ -29,7 +29,7 @@ export class ShoppingCart {
       if (!cartItem) {
         cartItem = {
           name: item.name(),
-          priceCents: item.priceCents(),
+          priceCents: 0,
           quantity: 0,
         };
         cartItems.push(cartItem);

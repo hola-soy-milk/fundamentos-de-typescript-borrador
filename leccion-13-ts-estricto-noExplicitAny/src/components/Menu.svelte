@@ -12,7 +12,7 @@
 </div>
 
 <style>
-  .flex {
+   .flex {
     display: flex;
     margin-left: auto;
     margin-right: auto;

@@ -17,7 +17,7 @@ export default class ShoppingCart {
             cartItem[item.name()] = cartItem[item.name()] || {
                 name: item.name(),
                 quantity: 0,
-                priceCents: item.priceCents()
+                priceCents: 0
             };
             cartItem[item.name()].quantity += 1;
             cartItem[item.name()].priceCents += item.priceCents();

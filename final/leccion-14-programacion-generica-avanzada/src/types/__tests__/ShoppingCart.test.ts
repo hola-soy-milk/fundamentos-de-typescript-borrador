@@ -28,7 +28,7 @@ test("Cart with item adds to total", () => {
   const cart = new ShoppingCart<Big>();
   cart.addItem({
     priceCents: () => 100,
-    name: () => "Big marshmallow"
+    name: () => "Big candy"
   });
   expect(cart.total()).toBe(100);
 });

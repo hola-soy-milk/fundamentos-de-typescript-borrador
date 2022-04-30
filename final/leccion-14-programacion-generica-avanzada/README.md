@@ -198,7 +198,7 @@ En `./src/App.svelte`:
 
 ```
 -       let cart = new shoppingcart;
-+       let cart = new shoppingcart<marshmallow>();
++       let cart = new shoppingcart<candy>();
 ```
 
 En `./src/models/Candy.ts`:
@@ -274,5 +274,5 @@ En `.src/models/__tests__/ShoppingCart.test.ts`:
 +  const cart = new ShoppingCart<Candy>();
    cart.addItem({
      priceCents: () => 100,
-     name: () => "Big marshmallow"
+     name: () => "Big candy"
 ```

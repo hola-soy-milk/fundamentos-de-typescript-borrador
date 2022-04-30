@@ -4,9 +4,9 @@
 </script>
 
 <div class="flex">
-{#each availableCandies as marshmallow}
-    <button on:click={(_e) => addCartItem(marshmallow)}>
-        {marshmallow.name()}<br>${marshmallow.priceCents() / 100.0}
+{#each availableCandies as candy}
+    <button on:click={(_e) => addCartItem(candy)}>
+        {candy.name()}<br>${candy.priceCents() / 100.0}
     </button>
 {/each}
 </div>

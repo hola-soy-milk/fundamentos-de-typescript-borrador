@@ -41,6 +41,8 @@ Recomiendo tener instalado:
 
 Para cada lección, puedes echar a andar el código con:
 
+    $ cd <CARPETA_DE_LECCION>
+
     $ npm install
 
     $ npm run dev

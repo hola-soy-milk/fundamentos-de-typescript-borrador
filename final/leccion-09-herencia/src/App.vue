@@ -2,9 +2,9 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { ref } from 'vue'
-import DieWrapper from './types/Dice'
+import Dice from './types/Dice'
 import Die from './components/Die.vue'
-const roll = () => Array.from({length: 4}, () => new DieWrapper(8));
+const roll = () => Array.from({length: 4}, () => new Dice(8));
 const dice = ref(roll());
 </script>
 

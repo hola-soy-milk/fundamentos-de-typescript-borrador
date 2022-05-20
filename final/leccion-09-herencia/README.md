@@ -1,6 +1,6 @@
 # Unidad 2, Lección 9: Herencia
 
-En esta lección vamos a crear una jerarquía de distintos lados del dados y asignarselos a un `DieWrapper`, encapsulando y grabando su valor.
+En esta lección vamos a crear una jerarquía de distintos lados del dados y asignarselos a un `Dice`, encapsulando y grabando su valor.
 
 ## 🐾 Primeros Pasos
 
@@ -73,38 +73,38 @@ class Perro extends Animal {
 ¡Ha cambiado bastante el archivo `./src/types/Dice.ts`! En la línea 2, encontrarás una nueva propiedad:
 
 ```typescript
-die: Die;
+face: Face;
 ```
 
-También verás que cambió el constructor y el `value`, además agregamos `dieForValue`:
+También verás que cambió el constructor y el `value`, además agregamos `faceForValue`:
 
 ```typescript
   constructor(sides: number = 6) {
     let value: number = Math.floor(Math.random() * sides) + 1;
     this.sides = sides;
-    this.die = this.dieForValue(value);
+    this.die = this.faceForValue(value);
   }
 
   value(): number {
     return this.die.value();
   }
   
-  private dieForValue(value: number): Die {
+  private faceForValue(value: number): Face {
     switch (value) {
       case 1:
-        return new OneDie();
+        return new OneFace();
       case 2:
-        return new TwoDie();
+        return new TwoFace();
       case 3:
-        return new ThreeDie();
+        return new ThreeFace();
       case 4:
-        return new FourDie();
+        return new FourFace();
       case 5:
-        return new FiveDie();
+        return new FiveFace();
       case 6:
-        return new SixDie();
+        return new SixFace();
       default:
-        return new OneDie();
+        return new OneFace();
     }
   }
 ```
@@ -112,25 +112,25 @@ También verás que cambió el constructor y el `value`, además agregamos `dieF
 
 ## 🥅 Metas
 
-En esta lección, vamos a agregar una clase abstracta llamada `Die` y sus subclases:
+En esta lección, vamos a agregar una clase abstracta llamada `Face` y sus subclases:
 
-- OneDie
-- TwoDie
-- ThreeDie
-- FourDie
-- FiveDie
-- SixDie
+- OneFace
+- TwoFace
+- ThreeFace
+- FourFace
+- FiveFace
+- SixFace
 
 ## 🤸 Ejercicios
 
 ### 1. Declarar clase abstracta
 
-En `./src/types/Dice.ts`, debajo de la clase `DieWrapper`, agrega la clase abstracta `Die` con función abstracta `value` que retorna un `number`.
+En `./src/types/Dice.ts`, debajo de la clase `Dice`, agrega la clase abstracta `Face` con función abstracta `value` que retorna un `number`.
 
-### 2. Las subclases de `Die`
+### 2. Las subclases de `Face`
 
 Agrega las seis subclases que mencionamos antes, cada una con una implementación de `value()` que retorna un valor correspondiente al número.
 
 ### Crédito extra
 
-Agrega `SevenDie` y `EightDie`. ¿Qué nos falta para poder usarlos?
+Agrega `SevenFace` y `EightFace`. ¿Qué nos falta para poder usarlos?

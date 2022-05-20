@@ -1,4 +1,4 @@
-export default class DieWrapper {
+export default class Dice {
   constructor(private sides: number) {}
 
   value(): number {

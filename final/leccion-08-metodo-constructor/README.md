@@ -9,14 +9,14 @@ Vamos a cambiar nuestro juego un poco para que pueda jugarse con dados de distin
 Veamos qué es lo que ha cambiado en `./src/App.vue`, específicamente en la línea 7:
 
 ```typescript
-const roll = () => Array.from({length: 4}, () => new DieWrapper(6));
+const roll = () => Array.from({length: 4}, () => new Dice(6));
 ```
 
-Aquí vemos que le pasamos un 6 a cada nuevo `DieWrapper`!Esta será la cantidad de lados que tendrá cada dado!
+Aquí vemos que le pasamos un 6 a cada nuevo `Dice`!Esta será la cantidad de lados que tendrá cada dado!
 
 ## 🥅 Metas
 
-En esta lección vamos a modificar nuestra clase `DieWrapper` para que acepte una cantidad de lados `sides` y lo ultilice como el máximo valor al tirarlo.
+En esta lección vamos a modificar nuestra clase `Dice` para que acepte una cantidad de lados `sides` y lo ultilice como el máximo valor al tirarlo.
 
 ## 🤸 Ejercicios
 
@@ -34,11 +34,11 @@ class Perro {
 }
 ```
 
-Agreguémosle una propiedad a `DieWrapper` llamada `sides` que será del tipo `number`.
+Agreguémosle una propiedad a `Dice` llamada `sides` que será del tipo `number`.
 
 ### 2. Adaptar la función `value`
 
-En la lección anterior habíamos programado nuestro `DieWrapper` para que tirase al azar un número entre 1 y 6 y lo guardará en `value`. Ahora lo vamos a adaptar para que acepte entre 1 y el número de lados dados, usando la palabra clave `this`.
+En la lección anterior habíamos programado nuestro `Dice` para que tirase al azar un número entre 1 y 6 y lo guardará en `value`. Ahora lo vamos a adaptar para que acepte entre 1 y el número de lados dados, usando la palabra clave `this`.
 
 ### Crédito extra: Propiedad privada
 
@@ -66,7 +66,7 @@ Este es equivalente al anterior
 
 ¡Se puede hacer con elementos privados tambien!
 
-Tratemos de cambiar la propiedad `sides` de la clase `DieWrapper` a privada.
+Tratemos de cambiar la propiedad `sides` de la clase `Dice` a privada.
 
 ## 🤔 Reflexiones
 

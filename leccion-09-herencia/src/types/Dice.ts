@@ -1,31 +1,31 @@
-export default class DieWrapper {
-  die: Die;
+export default class Dice {
+  face: Face;
   sides: number;
 
   constructor(sides: number = 6) {
     let value: number = Math.floor(Math.random() * sides) + 1;
     this.sides = sides;
-    this.die = this.dieForValue(value);
+    this.die = this.faceForValue(value);
   }
 
   value(): number {
     return this.die.value();
   }
 
-  private dieForValue(value: number): Die {
+  private faceForValue(value: number): Face {
     switch (value) {
       case 1:
-        return new OneDie();
+        return new OneFace();
       case 2:
-        return new TwoDie();
+        return new TwoFace();
       case 3:
-        return new ThreeDie();
+        return new ThreeFace();
       case 4:
-        return new FourDie();
+        return new FourFace();
       case 5:
-        return new FiveDie();
+        return new FiveFace();
       case 6:
-        return new SixDie();
+        return new SixFace();
     }
   }
 }

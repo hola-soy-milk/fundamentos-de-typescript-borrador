@@ -1,88 +1,88 @@
-export default class DieWrapper {
-  die: Die;
+export default class Dice {
+  face: Face;
   sides: number;
 
   constructor(sides: number = 6) {
     let value: number = Math.floor(Math.random() * sides) + 1;
     this.sides = sides;
-    this.die = this.dieForValue(value);
+    this.die = this.faceForValue(value);
   }
 
   value(): number {
     return this.die.value();
   }
 
-  private dieForValue(value: number): Die {
+  private faceForValue(value: number): Face {
     switch (value) {
       case 1:
-        return new OneDie();
+        return new OneFace();
       case 2:
-        return new TwoDie();
+        return new TwoFace();
       case 3:
-        return new ThreeDie();
+        return new ThreeFace();
       case 4:
-        return new FourDie();
+        return new FourFace();
       case 5:
-        return new FiveDie();
+        return new FiveFace();
       case 6:
-        return new SixDie();
+        return new SixFace();
       case 7:
-        return new SevenDie();
+        return new SevenFace();
       case 8:
-        return new EightDie();
+        return new EightFace();
       default:
-        return new OneDie();
+        return new OneFace();
     }
   }
 }
 
-abstract class Die {
+abstract class Face {
   abstract value(): number;
 }
 
-class OneDie extends Die {
+class OneFace extends Face {
   value() {
     return 1;
   }
 }
 
-class TwoDie extends Die {
+class TwoFace extends Face {
   value() {
     return 2;
   }
 }
 
-class ThreeDie extends Die {
+class ThreeFace extends Face {
   value() {
     return 3;
   }
 }
 
-class FourDie extends Die {
+class FourFace extends Face {
   value() {
     return 4;
   }
 }
 
-class FiveDie extends Die {
+class FiveFace extends Face {
   value() {
     return 5;
   }
 }
 
-class SixDie extends Die {
+class SixFace extends Face {
   value() {
     return 6;
   }
 }
 
-class SevenDie extends Die {
+class SevenFace extends Face {
   value() {
     return 7;
   }
 }
 
-class EightDie extends Die {
+class EightFace extends Face {
   value() {
     return 8;
   }

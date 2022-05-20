@@ -47,7 +47,7 @@ Con esto, podemos tener por seguro que la edad se haya definido.
 Lo principal se encuentra en `./src/types/Dice.ts` en la línea 2:
 
 ```typescript
-die?: Die;
+face?: Face;
 ```
 
 Si tratamos de construir la aplicación con el comando:
@@ -86,13 +86,13 @@ throw new Error(message);
 
 ¡Pongámos nuestra nueva propiedad opcional en práctica!
 
-Cambiemos la firma de nuestra función `dieForValue` en la línea 18:
+Cambiemos la firma de nuestra función `faceForValue` en la línea 18:
 
 ```typescript
-  private dieForValue(value: number): Die | undefined {
+  private faceForValue(value: number): Face | undefined {
 ```
 
-El valor de retorno de `dieForValue` ahora puede ser de tipo `Die` o `undefined`. Esto se llama un **tipo unión**.
+El valor de retorno de `faceForValue` ahora puede ser de tipo `Face` o `undefined`. Esto se llama un **tipo unión**.
 
 Ahora podemos cambiarlo para que el `switch` por defecto retorne un `undefined`.
 

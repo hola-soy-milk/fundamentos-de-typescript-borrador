@@ -60,9 +60,9 @@ En esta lección vamos a declarar y a ultilizar nuestra primera clase con TypeSc
 
 ## 🤸 Ejercicios
 
-### 1. La clase `DiceWrapper`
+### 1. La clase `DieWrapper`
 
-En `./src/types/Dice.ts`, exportaremos una nueva clase llamada `DiceWrapper`.
+En `./src/types/Dice.ts`, exportaremos una nueva clase llamada `DieWrapper`.
 
 Tendrá una función llamada `value` que retornará un número [al azar](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/random) entre 1 y 6. ¡Tal como un dado de verdad!
 

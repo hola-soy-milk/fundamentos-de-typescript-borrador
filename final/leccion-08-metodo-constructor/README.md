@@ -34,11 +34,11 @@ class Perro {
 }
 ```
 
-Agreguémosle una propiedad a `DiceWrapper` llamada `sides` que será del tipo `number`.
+Agreguémosle una propiedad a `DieWrapper` llamada `sides` que será del tipo `number`.
 
 ### 2. Adaptar la función `value`
 
-En la lección anterior habíamos programado nuestro `DiceWrapper` para que tirase al azar un número entre 1 y 6 y lo guardará en `value`. Ahora lo vamos a adaptar para que acepte entre 1 y el número de lados dados, usando la palabra clave `this`.
+En la lección anterior habíamos programado nuestro `DieWrapper` para que tirase al azar un número entre 1 y 6 y lo guardará en `value`. Ahora lo vamos a adaptar para que acepte entre 1 y el número de lados dados, usando la palabra clave `this`.
 
 ### Crédito extra: Propiedad privada
 
@@ -66,7 +66,7 @@ Este es equivalente al anterior
 
 ¡Se puede hacer con elementos privados tambien!
 
-Tratemos de cambiar la propiedad `sides` de la clase `DiceWrapper` a privada.
+Tratemos de cambiar la propiedad `sides` de la clase `DieWrapper` a privada.
 
 ## 🤔 Reflexiones
 

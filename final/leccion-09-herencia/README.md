@@ -1,6 +1,6 @@
 # Unidad 2, Lección 9: Herencia
 
-En esta lección vamos a crear una jerarquía de distintos lados del dados y asignarselos a un `DiceWrapper`, encapsulando y grabando su valor.
+En esta lección vamos a crear una jerarquía de distintos lados del dados y asignarselos a un `DieWrapper`, encapsulando y grabando su valor.
 
 ## 🐾 Primeros Pasos
 
@@ -125,7 +125,7 @@ En esta lección, vamos a agregar una clase abstracta llamada `Die` y sus subcla
 
 ### 1. Declarar clase abstracta
 
-En `./src/types/Dice.ts`, debajo de la clase `DiceWrapper`, agrega la clase abstracta `Die` con función abstracta `value` que retorna un `number`.
+En `./src/types/Dice.ts`, debajo de la clase `DieWrapper`, agrega la clase abstracta `Die` con función abstracta `value` que retorna un `number`.
 
 ### 2. Las subclases de `Die`
 

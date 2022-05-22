@@ -62,7 +62,7 @@ Veremos que falla con un error:
 
 src/types/Dice.ts:12:12 - error TS2532: Object is possibly 'undefined'.
 
-12     return this.die.value();
+12     return this.face.value();
               ~~~~~~~~
 
 Found 1 error.

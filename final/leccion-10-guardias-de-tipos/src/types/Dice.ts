@@ -10,7 +10,7 @@ export default class Dice {
 
   value(): number {
     if (this.die) {
-      return this.die.value();
+      return this.face.value();
     }
     throw new Error("Imposible no tener lado de dado");
   }

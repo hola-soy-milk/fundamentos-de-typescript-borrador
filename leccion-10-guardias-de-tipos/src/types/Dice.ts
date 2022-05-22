@@ -9,7 +9,7 @@ export default class Dice {
   }
 
   value(): number {
-    return this.die.value();
+    return this.face.value();
   }
 
   private faceForValue(value: number): Face {

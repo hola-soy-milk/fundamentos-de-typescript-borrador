@@ -86,7 +86,7 @@ También verás que cambió el constructor y el `value`, además agregamos `face
   }
 
   value(): number {
-    return this.die.value();
+    return this.face.value();
   }
   
   private faceForValue(value: number): Face {

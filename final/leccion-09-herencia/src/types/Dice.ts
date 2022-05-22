@@ -5,7 +5,7 @@ export default class Dice {
   constructor(sides: number = 6) {
     let value: number = Math.floor(Math.random() * sides) + 1;
     this.sides = sides;
-    this.die = this.faceForValue(value);
+    this.face = this.faceForValue(value);
   }
 
   value(): number {

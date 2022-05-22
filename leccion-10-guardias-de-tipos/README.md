@@ -76,7 +76,7 @@ En esta lección, vamos a arreglar nuestra aplicación usando una guardia de tip
 
 ### 1. ¿Qué pasa si no hay lado de dado?
 
-En el caso donde `die` sea `undefined`, lanzemos un error que diga "Imposible no tener lado de dado". Lanzar un error es igual que en JavaScript:
+En el caso donde `face` sea `undefined`, lanzemos un error que diga "Imposible no tener lado de dado". Lanzar un error es igual que en JavaScript:
 
 ```typescript
 throw new Error(message);

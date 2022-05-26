@@ -34,7 +34,17 @@ Seamos honestos: Agregar una herramienta más a nuestro juego tiene que consider
 
 Por este motivo vamos a examinar los beneficios de TypeScript.
 
-###
+Una de los aspectos más importantes de TypeScript es que es un superconjunto de JavaScript. ¿Qué quiere decir esto?
+
+Tódo el código que escribimos en JavaScript también es código TypeScript válido. O sea, el conocimiento de JavaScript es un requerimiento para aprender TypeScript.
+
+Pero entonces ¿qué es lo que aporta TypeScript?
+
+### Tipos Estrictos
+
+No solo se puede trabajar con tipos en TypeScript tal como en JavaScript
+
+Una variable de tipo `string` siempre será `string` y asignarle ese tipo nos garantiza que no será accidentalmente de otro tipo.
 
 ## ¿Dónde puedo usar TypeScript?
 

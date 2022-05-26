@@ -1,6 +1,6 @@
 # Lección 00: Introducción
 
-TypeScript es un lenguaje de programación de código abierto  que extiende las capacidades de JavaScript, usado para desarrollar aplicaciones modernas y seguras.
+TypeScript es un lenguaje de programación de código abierto que extiende las capacidades de JavaScript, usado para desarrollar aplicaciones modernas y seguras.
 
 Fundamentalmente, TypeScript es JavaScript con adiciones:
 
@@ -12,7 +12,7 @@ Fundamentalmente, TypeScript es JavaScript con adiciones:
 
 ## Antes de comenzar
 
-El propósito de esta lección es mostrar qué esperar de este workshop.
+El propósito de esta lección es mostrar qué esperar de este workshop y repasar los beneficios de TypeScript.
 
 ## ¡Te doy la bienvenida!
 
@@ -27,6 +27,14 @@ Este workshop anticipa que se te haz convencidó a usar TypeScript. Aquí presen
 - Cambiar una aplicación existente de JavaScript a TypeScript
 - Continuar desarrollando una aplicacíon TypeScript existente
 - De una buena a una gran base de código TypeScript
+
+## Por qué usar TypeScript
+
+Seamos honestos: Agregar una herramienta más a nuestro juego tiene que considerarse cuidadósamente. Si no podemos justificar esta herramienta, capaz que no valga la pena usarla.
+
+Por este motivo vamos a examinar los beneficios de TypeScript.
+
+###
 
 ## ¿Dónde puedo usar TypeScript?
 

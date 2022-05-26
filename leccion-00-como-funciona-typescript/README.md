@@ -38,6 +38,8 @@ Una de los aspectos más importantes de TypeScript es que es un superconjunto de
 
 Tódo el código que escribimos en JavaScript también es código TypeScript válido. O sea, el conocimiento de JavaScript es un requerimiento para aprender TypeScript.
 
+![Imagen demostrando el logo de TypeScript como superconjunto al lado del logo de JavaScript](https://user-images.githubusercontent.com/656318/170575087-a148f14b-f1b6-4c8d-b9e7-80db7acb7def.jpg)
+
 Pero entonces ¿qué es lo que aporta TypeScript?
 
 ### Tipos Estrictos

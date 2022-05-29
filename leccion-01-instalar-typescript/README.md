@@ -24,6 +24,8 @@ Tras instalar los paquetes, echa a andar la aplicación con el siguente comando:
 
         $ npm run dev
 
+> ¡Ojo! Que los vamos a instalar con la opción `--save-dev`
+
 Miremos los paquetes que vamos a instalar:
 
 ### `typescript`
@@ -46,3 +48,4 @@ Miremos los paquetes que vamos a instalar:
 
 - Instalamos TypeScript, ¿pero lo estamos usando?
 - ¿Por qué tantos paquetes de `npm`?
+- ¿Por qué instalamos los paquetes de TypeScript con `--save-dev`?

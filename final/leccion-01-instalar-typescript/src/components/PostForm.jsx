@@ -1,3 +1,7 @@
+/* 👇 Componente: Formulario para crear un Post.
+ * Tiene como props la función para crear un Post.
+ */
+
 import React from "react";
 
 function PostForm(props) {

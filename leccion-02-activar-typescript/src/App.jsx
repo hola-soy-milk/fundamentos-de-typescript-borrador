@@ -1,5 +1,8 @@
 /* 👇 Componente: Funcionalidad principal para nuestra app.
  * Establece el estado de nuestras posts con un post predeterminado.
+ *
+ * ❗️ Hay que renombrar este archivo
+ * 
  */
 
 import React, {useState, useEffect} from 'react';

@@ -1,5 +1,8 @@
 /* 👇 Componente lista de Posts en nuestra app de palabras amables.
  *    Tiene como props el arreglo de posts desde `App.js`.
+ *
+ * ❗️ Hay que renombrar este archivo
+ * 
  */
 
 import React from 'react';

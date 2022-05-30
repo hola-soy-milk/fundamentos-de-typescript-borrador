@@ -1,5 +1,8 @@
 /* 👇 Componente: Formulario para crear un Post.
  * Tiene como props la función para crear un Post.
+ *
+ * ❗️ Hay que renombrar este archivo
+ * 
  */
 
 import React from "react";

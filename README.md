@@ -25,6 +25,12 @@ Soy ingenerio de software, developer relations e instructor de programación viv
 
 Al terminar este workshop, podrás desarrollar aplicaciones TypeScript con confianza y comodidad.
 
+## ✨ Emojis relevantes
+
+👇 Cabecera de un archivo. Nos describe el contenido del archivo.
+❗️ Tarea. Aquí pertenecen los cambios que agregaremos.
+🛎️ ¡Antención! Aquí compartimos información relevante a la tarea.
+
 ## 🚧 Requerimientos
 
 Este workshop asume dos cosas:

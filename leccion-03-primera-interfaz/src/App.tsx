@@ -7,12 +7,12 @@ import './App.css';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
 
-// 🏃‍♀️ Aquí importamos nuestro nuevo tipo, `Post`!
+// 🛎 Aquí importamos nuestro nuevo tipo, `Post`!
 import Post from './types/Post';
 
 function App() {
 
-  /* 💁‍♀️ Aquí importamos nuestro nuevo tipo, `Post`!
+  /* ️🛎 Aquí importamos nuestro nuevo tipo, `Post`!
   * Lo ultilizamos con `useState` para guardar un arreglo de Posts en nuestro estado.
   */
   const [posts, setPosts] = useState<Post[]>([]);
@@ -22,6 +22,7 @@ function App() {
   }
 
   useEffect(() => {
+    // 🛎 Aquí podemos ver la estructura de un `Post` e inferir los tipos de las propiedades.
     setPosts([{
       id: posts.length + 1,
       name: "Ramón",

@@ -12,6 +12,8 @@ Digamos que tenemos un tipo que se llama `type`. Podemos declarar una variable y
 let nombre: string = "Fernanda";
 ```
 
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/DYUwLgBAdg9gtgIwE4gFwQM5iQSygcwgF4IAiAMRCSgEMoATG0gbiA)!
+
 Esta declaración, a pesar de que no parece que haga mucho, le dice al compilador de TypeScript que la variable `nombre` sólamente podrá ser un `string` y fallará si le asignamos otro tipo.
 
 ### Tipos Primitivos
@@ -20,7 +22,7 @@ Estos se verán familiares:
 
 - `number`
 - `string`
-- `boolean` 
+- `boolean`
 
 ### Arreglos
 
@@ -30,6 +32,8 @@ Existen dos maneras de declarar un Arreglo:
 const array1: number[] = [1, 2, 3];
 const array2: Array<number> = [4, 5, 6];
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhgJwXAngRgFwzAVwLYBGApggNoC6MAvDKWgDQwBMjAzOQNwBQoksiyFEywBBJKgA8uQiQB81WgBZGAVkYA2TkA)!
 
 El segundo modo es algo que cubriremos en detalle cuando hablemos de los tipos genéricos.
 
@@ -41,11 +45,13 @@ Si no le damos un tipo a una variable, TypeScript asume automáticamente que es 
 
 ```typescript
 // Explicit Any
-let valor: any = { nombre: "Estéban" };
+let variable: any = { nombre: "Estéban" };
 
 // Implicit Any
-let valor = { nombre: "Estéban" };
+let otraVariable = { nombre: "Estéban" };
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/PTAEFEA8AcBsEsDG8AuoCCA7AngKFgKZoBuAhgE7ykBGhAXKKTqALygDeomA9gLbXkCDAETgAzigCX1JsNABfANy5cIUAElecJKgw58RUNxTlSANQpVaBVhy58BQ0KInTZCxUA)!
 
 ### Tipos Únicos
 
@@ -57,26 +63,28 @@ Las interfaces nos permiten declarar la estructura de la cual deberá conformar 
 
 ```typescript
 interface Mascota {
-    nombre: string,
-    edad: number,
-    vuela: boolean,
-    amistades: Mascota[]
+  nombre: string;
+  edad: number;
+  vuela: boolean;
+  amistades: Mascota[];
 }
 
 let perro = {
-    nombre: "Fred",
-    edad: 15,
-    vuela: false,
-    amistades: []
+  nombre: "Fred",
+  edad: 15,
+  vuela: false,
+  amistades: [],
 };
 
 let gato = {
-    nombre: "Calcetines",
-    edad: 13,
-    vuela: true,
-    amistades: [perro]
-}
+  nombre: "Calcetines",
+  edad: 13,
+  vuela: true,
+  amistades: [perro],
+};
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgLJwM4IPZjsgbwChlkRsBbAIyggC5kMwpQBzAbhOQgBM4eGIAK7VonUgDchEADZwGVbNhkQ4IccjgVgTfhAwN0WXHADaAXU4BfIkRVhkAB2hRsyALyEu5arQYAiADFaHn8AGi5efgYARgBWCMlpOQZ4GQwIRM1tXR59BgsIq047CAdWODA3T2JSHxp6ZH8AYTgZJDBQfXDIvgFkGIBmLKlZeWRmaSytHTw8g2RTZyhXcyL2IA)!
 
 ## 🥅 Metas
 
@@ -84,21 +92,11 @@ En esta lección vamos a declarar y ultilizar nuestra primera interfaz.
 
 ## 🤸 Ejercicios
 
-### 1. Un nuevo tipo
-
-En `./src/App.tsx` veremos que importamos un nuevo archivo en la línea 5:
-
-```typescript
-import Post from './types/Post';
-```
-
-¡Nuestro primer paso será crear este nuevo archivo `./src/types/Post.ts`!
-
-### 2. Exportar nuestra interfaz `Post`
+### Exportar nuestra interfaz `Post`
 
 Igual que con modulos ES6, con TypeScript podemos exportar definiciones, incluyendo interfaces.
 
-Exportemos una interfaz llamada Post, con las siguentes propiedades:
+Exportemos una interfaz llamada Post, con las siguentes propiedades **sin asignarles tipo**:
 
 - `id`: El número de identificación del `Post`
 - `name`: El nombre del usuario
@@ -113,13 +111,15 @@ Bueno ahora que ya tenemos nuestra interfaz con sus propiedades, ¿por qué no l
 Echémosle un vistazo a `./src/App.tsx`, en la línea 23:
 
 ```typescript
-setPosts([{
+setPosts([
+  {
     id: posts.length + 1,
     name: "Ramón",
     handle: "hola_soy_milk",
     body: "Eres genial!",
-    timestamp: new Date,
-}]);
+    timestamp: new Date(),
+  },
+]);
 ```
 
 Esto nos ayuda a deducir que tipos tendrán las propiedades. 🤔
@@ -127,4 +127,3 @@ Esto nos ayuda a deducir que tipos tendrán las propiedades. 🤔
 ## 🤔 Reflexiones
 
 - ¿Por qué es que podemos declarar las propiedades del interfaz sín añadirles tipos?
-

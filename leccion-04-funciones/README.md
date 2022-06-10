@@ -62,7 +62,7 @@ Y la usamos en la línea 11:
 <p className="small right">{formatPostTimestamp(post)}</p>
 ```
 
-Agreguemos en el nuevo archivo `./src/utils/formatters.ts`. Tendrá una función formatPostTimestamp:
+Exportemos en `./src/utils/formatters.ts` la función formatPostTimestamp:
 
 - Toma como argumento un `post` de tipo `Post`
 - Retorna un `Date` formateado: `return new Date(post.timestamp).toLocaleString("es");`

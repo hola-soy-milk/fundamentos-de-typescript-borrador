@@ -13,12 +13,15 @@ const publicarAdicion = (x: number, y: number) => {
     console.log(x + y);
 };
 ```
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYewdgzgLgBADgVwEYBsCWwCGAnAggEwzXBgF4YAKADwC4YwEBbJAU2wBoYBPOh5tgJRkAfDADeAKBjSYoSCBQsAdChABzajADU3AQG4JAXz1A)!
 
 No sólo eso, sino que también, permiten definir un tipo de retorno y con esto asegurar que la función nos da lo que dice:
 
 ```typescript
 const adicion = (x: number, y: number): number => x + y;
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhgEwJbCeGBeGAKAHgLhjAFcBbAIwFMAnAGhgE9CSKaBKZsq6zAPhlwwA1IwDcQA)!
 
 Pero ¿qué pasa cuando no definimos un tipo de retorno? En JavaScript, una función que no devuelve nada en realidad devuelve `undefined`. En TypeScript, es casi lo mismo:
 
@@ -33,6 +36,7 @@ const publicarAdicion = (x: number, y: number): void => {
     console.log(x + y);
 };
 ```
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYewdgzgLgBADgVwEYBsCWwCGAnAggEwzXBgF4YAKADwC4YwEBbJAU2wBoYBPOh5tgJR0AbiDT4yAPhgBvAFAxFMUJBAoWAOhQgA5tRgBqbgIDccgL4mgA)!
 
 Esta definición de `publicarAdicion` es equivalente a la anterior.
 
@@ -58,7 +62,7 @@ Y la usamos en la línea 11:
 <p className="small right">{formatPostTimestamp(post)}</p>
 ```
 
-Agreguemos en el nuevo archivo `./src/utils/formatters.ts`. Tendrá una función formatPostTimestamp:
+Exportemos en `./src/utils/formatters.ts` la función formatPostTimestamp:
 
 - Toma como argumento un `post` de tipo `Post`
 - Retorna un `Date` formateado: `return new Date(post.timestamp).toLocaleString("es");`
@@ -81,7 +85,7 @@ En la línea 5, definimos nuestro componente con propiedades como un objeto:
 function PostList({posts}) {
 ```
 
-Extraigamos un interfaz local para los `Props` que tengan como propediad un arreglo de `posts`.
+Extraigamos un interfaz local para los `Props` que tengan como propediad un arreglo de `Post`s.
 
 ## 🤔 Reflexiones
 

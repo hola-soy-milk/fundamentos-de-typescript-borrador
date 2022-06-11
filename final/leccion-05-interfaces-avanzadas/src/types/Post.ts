@@ -1,8 +1,14 @@
-import Sender from "./Sender";
+/*
+ * 👇 Definición del interfaz `Post`
+ * 
+ * ❗️ Integremos una propiedad `sender` que reemplazará `name` y `handle`.
+ */
+
+import { Sender } from "./Sender";
 
 export default interface Post {
   id: number;
-  sender: Sender;
   body: string;
+  sender: Sender
   timestamp: Date;
 }

@@ -29,7 +29,7 @@ En esta lección, vamos a:
 
 ### 1. Nueva interfaz para `Sender`
 
-Crea un nuevo archivo `./src/types/Sender.ts` y exporta una nueva interfaz Sender con 3 propiedades.
+En el nuevo archivo `./src/types/Sender.ts` exporta una nueva interfaz Sender con 3 propiedades **sin asignarles tipo**.
 
 🤔 ¿Cuáles son?
 

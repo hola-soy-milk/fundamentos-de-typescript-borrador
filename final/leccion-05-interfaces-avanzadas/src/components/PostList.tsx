@@ -1,3 +1,7 @@
+/* 👇 Componente lista de Posts en nuestra app de palabras amables.
+ *    Tiene como props el arreglo de posts desde `App.js`.
+ */
+
 import React from 'react';
 import Post from '../types/Post';
 import {formatPostTimestamp} from '../utils/formatters'

@@ -1,3 +1,4 @@
+// 👇 Definición del interfaz `Post`
 import Sender from "./Sender";
 
 export default interface Post {

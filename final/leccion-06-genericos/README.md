@@ -14,6 +14,8 @@ function generico<T>(elem: T): string {
 }
 ```
 
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAcwKZlQJxhOAeAFQD4AKVAG1QFsAuRAgSjoGcpsxlEBvAKEX8SZUUEJiRQAngAdUcYIgrUA3DwC+QA)!
+
 Y bueno, seguro que estaremos pensando, ¿no podemos usar un tipo `any`? ¡Sí, se puede!
 
 ```typescript
@@ -22,6 +24,8 @@ function generico(elem: any): string {
 }
 ```
 
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAcwKZlQJxhOAKVAG1QFsAuRAQzAE8BKCgZymzGUQG8AoRXxTVFBCYkUGgAdUcYIiKkA3FwC+QA)!
+
 Pero supongamos un caso donde los tipos de varios argumentos pueden ser cualquiera, pero los mismos:
 
 ```typescript
@@ -29,6 +33,8 @@ function generico<T>(elem1: T, elem2: T): void {
     console.log(elem1, elem2);
 }
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAcwKZlQJxhOAeAFQD4AKVAG1QFsBGALkQIBpELqAmBggSgYDc4MACaIA3gChEUxLjABnOJQB05OMjKVaLNlXbcA3OIC+QA)!
 
 Con esta función, los siguentes funcionan sin problema:
 - `generico(1, 2);`
@@ -116,4 +122,4 @@ Para hacer nuestras peticiones HTTP, usamos la librería `axios`. Esta también 
 ## 🤔 Reflexiones
 
 - ¿Podemos usar algo que no sea ni `T` ni `G` en nuestros genéricos?
-- ¿Qué tipos de retorno tienen las funciones de `api`?
+- ¿Qué tipos de retorno tienen las funciones de `api`? Ojo que el `get` retorna un arreglo.

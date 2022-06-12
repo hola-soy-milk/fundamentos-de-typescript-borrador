@@ -1,10 +1,8 @@
+<!-- 👇 Componente para renderizar el lado de un dado -->
 <script setup lang="ts">
 import { ref } from 'vue'
-import Face from './Face.vue'
 
 defineProps<{ faceValue: number }>()
-
-
 </script>
 
 <template>
@@ -38,5 +36,3 @@ code {
   color: #304455;
 }
 </style>
-
-export default {components: {Die}};

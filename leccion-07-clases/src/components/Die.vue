@@ -1,3 +1,4 @@
+<!-- 👇 Componente para renderizar el lado de un dado -->
 <script setup lang="ts">
 import { ref } from 'vue'
 

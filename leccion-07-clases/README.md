@@ -44,7 +44,7 @@ Casi igual que en JavaScript:
 class Perro {
     nombre: string;
     
-    constructor(nombre) {
+    constructor(nombre: string) {
         this.nombre = nombre;
     }
     
@@ -53,6 +53,8 @@ class Perro {
     }
 }
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?ssl=11&ssc=2&pln=1&pc=1#code/MYGwhgzhAEAKCmAnRB7aBvAUNH0B2KAtgEaLwBc0EALogJZ4DmA3NrmzsCnjYgK7BqKRAAoCJMpV4NGASgwdcOagAs6EAHTjS8aAF58RHayUBfRYvAATRGFHysSpVx4oQ8DSBSMRAIgCFAOJ8YHzQjCF8AIS+sia45qZAA)!
 
 ## 🥅 Metas
 

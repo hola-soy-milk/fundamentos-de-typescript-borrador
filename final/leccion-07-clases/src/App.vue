@@ -1,34 +1,41 @@
+<!-- 👇 Componente principal de nuestra aplicación Vue.
+      Usa una serie de tipos `Dice` para tirar los dados y mirar el puntuaje -->
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+import { variableDeclarator } from '@babel/types';
 import { ref } from 'vue'
+// ❗️ Aquí implementaremos nuestro tipo Dice
 import Dice from './types/Dice'
-import Die from './components/Die.vue'
+// 🛎 Con `ref`, Vue nos permite controlar un valor. En este caso, es un arreglo de 4 dados
 const roll = () => Array.from({length: 4}, () => new Dice());
 const dice = ref(roll());
 </script>
 
 <template>
-  <h1 class="top">¡Juguemos al 21!</h1>
-  <div class="grid center">
-    <Die v-for="die in dice" :faceValue="die.value()"/>
+  <div id="game">
+    <h1 class="top">¡Juguemos al 21!</h1>
+    <div class="grid center">
+      <!-- 🛎 Renderizar los dados con el componente `Die` -->
+      <Die :key="die" v-for="die in dice" :faceValue="die.value()"/>
+    </div>
+    <h1>
+      <!-- 🛎 Usar los dados para mostrar el puntuaje -->
+      {{dice.reduce((sum, die) => sum + die.value(), 0)}}
+      <!-- 🛎 Usar el puntuaje para mostrar si uno ganó o perdió -->
+      <span v-if="dice.reduce((sum, die) => sum + die.value(), 0) < 21">🎉</span>
+      <span v-else>😥</span>
+    </h1>
+    <button type="button" @click="dice = roll()">Tirar los dados</button>
   </div>
-  <h1>
-    {{dice.reduce((sum, die) => sum + die.value(), 0)}}
-    <span v-if="dice.reduce((sum, die) => sum + die.value(), 0) < 21">🎉</span>
-    <span v-else>😥</span>
-  </h1>
-  <button type="button" @click="dice = roll()">Tirar los dados</button>
 </template>
 
 <style>
-body, html {
+body, html, #app {
   height: 100%;
   width: 100%;
   background-color: #f0eeef;
   margin: 0;
   }
-#app {
+#game {
   height: 100%;
   display: flex;
   flex-direction: column;

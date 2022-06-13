@@ -1,9 +1,11 @@
+<!-- 👇 Componente principal de nuestra aplicación Vue.
+      Usa una serie de tipos `Dice` para tirar los dados y mirar el puntuaje -->
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { ref } from 'vue'
 import Dice from './types/Dice'
+// ❗️ ¡Ojo! Ahora el crear nuevas instancias de `Dice` tiene un parametro
 const roll = () => Array.from({length: 4}, () => new Dice(6));
+// 🛎 Con `ref`, Vue nos permite controlar un valor. En este caso, es un arreglo de 4 dados
 const dice = ref(roll());
 </script>
 
@@ -11,10 +13,13 @@ const dice = ref(roll());
 <div id="game">
   <h1 class="top">¡Juguemos al 21!</h1>
   <div class="grid center">
+    <!-- 🛎 Renderizar los dados con el componente `Die` -->
     <Die :key="die" v-for="die in dice" :faceValue="die.value()"/>
   </div>
   <h1>
+    <!-- 🛎 Usar los dados para mostrar el puntuaje -->
     {{dice.reduce((sum, die) => sum + die.value(), 0)}}
+    <!-- 🛎 Usar el puntuaje para mostrar si uno ganó o perdió -->
     <span v-if="dice.reduce((sum, die) => sum + die.value(), 0) < 21">🎉</span>
     <span v-else>😥</span>
   </h1>

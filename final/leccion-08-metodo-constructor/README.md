@@ -34,6 +34,8 @@ class Perro {
 }
 ```
 
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYGwhgzhAEAKCmAnRB7aBvAUNHA7FAtgEaLwBc0EALogJa4DmA3Njq9MCrtYgK7BUUiABT5ipCj3oMAlBnY5oVABa0IAOjEl40ALzQtpFooC+mE0A)!
+
 Agreguémosle una propiedad a `Dice` llamada `sides` que será del tipo `number`.
 
 ### 2. Adaptar la función `value`
@@ -54,6 +56,8 @@ class Perro {
 }
 ```
 
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYGwhgzhAEAKCmAnRB7aBvAUNHA7FAtgEaLwBc0EALogJa4DmA3Njq9MCrtYgK7BUUiABT5ipCj3oMAlBnY5oVABa0IAOjEl40ALzQtpFooC+mE0A)!
+
 Cambiémos el código para que `nombre` sea una propiedad pública:
 
 ```typescript
@@ -61,6 +65,8 @@ class Perro {
    constructor(public nombre: string) {}
 }
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYGwhgzhAEAKCmAnRB7aBvAUNHwUDsIAXRAV2CJUQAoAHUgIxAEthp8UBbBxeALmjFEzfAHMAlBgC+mKUA)!
 
 Este es equivalente al anterior 
 

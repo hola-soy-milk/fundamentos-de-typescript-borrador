@@ -16,6 +16,8 @@ abstract class Animal {
 }
 ```
 
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/IYIwzgLgTsDGEAJYBthjAgggOwJYFthkEBvAKASQHttIoBXeKqACgAd6RldYFsr8IKAFMAXAjq5sAcwCUpAL5kFQA)!
+
 Si tratamos de inicializar un `Animal`, TypeScript nos alega:
 
 `Cannot create an instance of an abstract class.`
@@ -39,6 +41,8 @@ class Pollito extends Animal {
   }
 }
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/IYIwzgLgTsDGEAJYBthjAgggOwJYFthkEBvAKASQHttIoBXeKqACgAd6RldYFsr8IKAFMAXAjq5sAcwCUpAL5klZFGgwAFYVChUEwgB4Rh2ACYYcBIqQoJUpmK3nlKr6rSrJhAOmRVpLAAGAIUA4vTA9AjSEfQAhIGyANy2Sipq6AgantwQeobGZhZ4hMQuCBAA7rgQxsBONm6UsDRgnj5+ASEaALd6bH0JyanKQA)!
 
 ### Funciones abstractas
 
@@ -67,6 +71,8 @@ class Perro extends Animal {
   }
 }
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/IYIwzgLgTsDGEAJYBthjAgggOwJYFthkEBvAKASQHttIoBXeKqACgAd6RldYFsr8IKAFMAXAjq5sAcwCUpAL4UEoOnESwBw1pvy4AJsHGSZs8QDcqBgNxklZFGgwAFbVCoJhADwjDs+jBwCIlJlVH0YVnlySkpNWipkYQA6ZCppFgADAEKAcXpgegRpAvoAQkzZW0olOK0dAQMjCWgpOQsrfVDY6gSk1PSs7IBFemEEKB4PXW0EABISXSaFCqrlJXsgA)!
 
 ## ¿Qué ha cambiado en esta lección?
 

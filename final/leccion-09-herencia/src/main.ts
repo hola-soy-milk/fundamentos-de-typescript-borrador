@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import Die from "./components/Die.vue";
+import Face from "./components/Face.vue";
+import App from "./App.vue";
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.component("Die", Die);
+app.component("Face", Face);
+app.mount("#app");

@@ -18,13 +18,16 @@ class Persona {
 }
 ```
 
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYGwhgzhAEAKCmAnCB7AdmaBvAUNf8AJmIQPwBc0aArgLYBGSA3Hvq9MOhAC6LXDcUiABQAHavRABLYFRQNE8Sj0RS0AcwCU2AL44dQA)!
+
 Aquí podemos ver que la clase tiene una propiedad `nombre`, pero la de `edad` tiene un signo de interrogación. Esto quiere decir que es una propiedad opcional. Puede ser de tipo `number` o `undefined`. O sea, si creamos una instancia de `Persona`, no requiere que se defina una edad. Por ejemplo:
 
 ```typescript 
 const humano: Persona = new Persona("Mirabel");
-humano.edad = 15;
 console.log(humano.edad < 100); // => Object is possibly 'undefined'.
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYGwhgzhAEAKCmAnCB7AdmaBvAUNf8AJmIQPwBc0aArgLYBGSA3Hvq9MOhAC6LXDcUiABQAHavRABLYFRQNE8Sj0RS0AcwCU2AL449OTmh7QAFnTBoUlBMnSYAvFXgB3OElQZhAIgCyUxDBGEG9NFiNUEHgAOhAUdWFzWksUaKISaAAeaABGAAY8sOggA)!
 
 Este error nos indica que tenemos que asegurarnos que `humano.edad` tenga un valor. 
 
@@ -39,6 +42,8 @@ if (humano.edad) {
    console.log(humano.edad < 100); // => 15
 }
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYGwhgzhAEAKCmAnCB7AdmaBvAUNf8AJmIQPwBc0aArgLYBGSA3Hvq9MOhAC6LXDcUiABQAHavRABLYFRQNE8Sj0RS0AcwCU2AL449OTmh7QAFnTBoUlBMnSYAvFXgB3OElQZhAIgCyUxDBGEG9NFikAM2hhc1pLFAA6IhJtXHwOLhQQeASQFHUYiysk4kJoAB5oAEYABhqw-SA)!
 
 Con esto, podemos tener por seguro que la edad se haya definido.
 
@@ -95,3 +100,7 @@ Cambiemos la firma de nuestra función `faceForValue` en la línea 18:
 El valor de retorno de `faceForValue` ahora puede ser de tipo `Face` o `undefined`. Esto se llama un **tipo unión**.
 
 Ahora podemos cambiarlo para que el `switch` por defecto retorne un `undefined`.
+
+## 🤔 Reflexiones
+
+¿De qué nos sirven las guardias de tipos?

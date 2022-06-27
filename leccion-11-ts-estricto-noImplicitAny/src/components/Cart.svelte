@@ -3,7 +3,7 @@
  * 👇 Componente para los items en el carrito.
  */
 
-// ❗️ A `items`, `amount` y `total` les falta tipo. Démosles `any`.
+// ❗️ A `items`, `amount` y `total` les falta tipo. Démosles `any[]` a `items` y `any` al resto.
   export let items;
   export let amount;
   export let total;

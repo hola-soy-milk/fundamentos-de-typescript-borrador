@@ -4,7 +4,7 @@
 
 export default class ShoppingCart {
 // 🛎 Tenemos una propiedad opcional de items de carrito
-// ❗️ A `items` le falta tipo. Démosle `any`
+// ❗️ A `items` le falta tipo. Démosle `any[]`
     items?;
 
 // 🛎 Crear un ShoppingCart con un arreglo de items vacío

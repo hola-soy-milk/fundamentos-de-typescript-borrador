@@ -1,16 +1,24 @@
 <script lang="ts">
-  import { availableCandies } from "../types/Candy";
+/*
+ * 👇 Componente para los dulces disponibles
+ */
+
+  import {availableCandies} from '../types/Candy';
+// ❗️ A `addCartItem` le falta tipo. Démosles `any`.
   export let addCartItem: any;
 </script>
 
 <div class="flex">
-  {#each availableCandies as candy}
+<!-- 🛎 Realizar un bucle sobre los dulces disponibles y renderizar botones para ellos -->
+{#each availableCandies as candy}
     <button on:click={(_e) => addCartItem(candy)}>
-      {candy.name()}<br />${candy.priceCents() / 100.0}
+        {candy.name()}<br>${candy.priceCents() / 100.0}
     </button>
-  {/each}
+{/each}
 </div>
 
+<!-- 🛎 Estilos para nuestro componente -->
+  
 <style>
   .flex {
     display: flex;

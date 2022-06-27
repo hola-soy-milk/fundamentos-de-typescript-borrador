@@ -1,4 +1,9 @@
 <script lang="ts">
+/*
+ * 👇 Componente para los items en el carrito.
+ */
+
+// ❗️ A `items`, `amount` y `total` les falta tipo. Démosles `any[]` a `items` y `any` al resto.
   export let items: any[];
   export let amount: any;
   export let total: any;
@@ -11,13 +16,13 @@
       <th>Amount</th>
       <th>Price</th>
     </tr>
-    {#each items as row}
-      <tr>
-        <td>{row.name}</td>
-        <td>{row.quantity}</td>
-        <td class="price">${row.priceCents / 100.0}</td>
-      </tr>
-    {/each}
+  {#each items as row }
+    <tr>
+      <td>{row.name}</td>
+      <td>{row.quantity}</td>
+      <td class="price">${row.priceCents / 100.0}</td>
+    </tr>
+  {/each}
     <tr>
       <td><strong>Total</strong></td>
       <td><strong>{amount}</strong></td>
@@ -26,6 +31,8 @@
   </table>
 {/if}
 
+<!-- 🛎 Estilos para nuestro componente -->
+  
 <style>
   table {
     margin-top: 1em;

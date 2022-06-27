@@ -1,24 +1,34 @@
+/*
+ * 👇 Tipo para nuestro carrito
+ */
+
 export default class ShoppingCart {
-  items?: any[];
+// 🛎 Tenemos una propiedad opcional de items de carrito
+// ❗️ A `items` le falta tipo. Démosle `any[]`
+    items?: any[];
 
-  constructor() {
-    this.items = [];
-  }
-
-  addItem(item: any) {
-    if (this.items !== undefined) {
-      this.items = [...this.items, item];
+// 🛎 Crear un ShoppingCart con un arreglo de items vacío
+    constructor() {
+        this.items = [];
     }
-    return this;
-  }
 
+// 🛎 Agregar un item
+// ❗️ A `item` le falta tipo. Démosle `any`
+    addItem(item: any) {
+        if (this.items !== undefined) {
+            this.items = [...this.items, item]
+        }
+        return this;
+    }
+
+// 🛎 Agrupar los items de acuerdo a cuantos y su total
   groupedItems() {
     return Object.values(
       this.items.reduce((cartItem, item) => {
         cartItem[item.name()] = cartItem[item.name()] || {
           name: item.name(),
           quantity: 0,
-          priceCents: item.priceCents(),
+          priceCents: 0,
         };
         cartItem[item.name()].quantity += 1;
         cartItem[item.name()].priceCents += item.priceCents();
@@ -27,11 +37,13 @@ export default class ShoppingCart {
     );
   }
 
-  numberOfItems() {
-    return this.items.length;
-  }
+// 🛎 Número de items
+    numberOfItems() {
+        return this.items.length;
+    }
 
-  total() {
-    return this.items.reduce((x, y) => x + y.priceCents(), 0);
-  }
+// 🛎 El precio completo
+    total() {
+        return this.items.reduce((x, y) => x + y.priceCents(), 0);
+    }
 }

@@ -5,7 +5,7 @@
 
   import {availableCandies} from '../types/Candy';
 // ❗️ A `addCartItem` le falta tipo. Démosles `any`.
-  export let addCartItem;
+  export let addCartItem: any;
 </script>
 
 <div class="flex">

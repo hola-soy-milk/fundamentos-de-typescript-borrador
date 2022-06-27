@@ -4,7 +4,7 @@
  */
 
   import {availableCandies} from '../types/Candy';
-// ❗️ A `addCartItem` le falta tipo
+// ❗️ A `addCartItem` le falta tipo. Démosles `any`.
   export let addCartItem;
 </script>
 

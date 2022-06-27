@@ -3,7 +3,7 @@
  */
 
 export abstract class Candy {
-// ❗️ A `priceCents` y `name` les falta tipo
+// ❗️ A `priceCents` y `name` les falta tipo. Démosles `any`.
     abstract priceCents();
     abstract name();
 }

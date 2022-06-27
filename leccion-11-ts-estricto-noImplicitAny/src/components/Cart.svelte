@@ -1,4 +1,9 @@
 <script lang="ts">
+/*
+ * 👇 Componente para los items en el carrito.
+ */
+
+// ❗️ A `items`, `amount` y `total` les falta tipo
   export let items;
   export let amount;
   export let total;
@@ -26,6 +31,8 @@
   </table>
 {/if}
 
+<!-- 🛎 Estilos para nuestro componente -->
+  
 <style>
   table {
     margin-top: 1em;

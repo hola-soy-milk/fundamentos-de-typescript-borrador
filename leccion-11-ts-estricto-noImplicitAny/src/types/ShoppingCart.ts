@@ -1,10 +1,18 @@
+/*
+ * 👇 Tipo para nuestro carrito
+ */
+
 export default class ShoppingCart {
+// 🛎 Tenemos una propiedad opcional de items de carrito
+// ❗️ A `items` le falta tipo
     items?;
 
+// 🛎 Crear un ShoppingCart con un arreglo de items vacío
     constructor() {
         this.items = [];
     }
 
+// 🛎 Agregar un item
     addItem(item) {
         if (this.items !== undefined) {
             this.items = [...this.items, item]
@@ -12,6 +20,7 @@ export default class ShoppingCart {
         return this;
     }
 
+// 🛎 Agrupar los items de acuerdo a cuantos y su total
   groupedItems() {
     return Object.values(
       this.items.reduce((cartItem, item) => {
@@ -27,10 +36,12 @@ export default class ShoppingCart {
     );
   }
 
+// 🛎 Número de items
     numberOfItems() {
         return this.items.length;
     }
 
+// 🛎 El precio completo
     total() {
         return this.items.reduce((x, y) => x + y.priceCents(), 0);
     }

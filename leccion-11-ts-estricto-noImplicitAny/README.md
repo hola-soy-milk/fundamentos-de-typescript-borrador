@@ -78,6 +78,8 @@ const porDos = (numero) => numero * 2;
 console.log(porDos(4));
 ```
 
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYewdgzgLgBADiATgERBGBeGAKMBXAWwFNEQBKTAPhn2NJgCoYAmAbgCh3RIQAbIgHS8QAc2wIUabABYyZVkA)!
+
 Este código no se compilará con el error:
 
 ```bash

@@ -1,4 +1,12 @@
+/*
+ * 👇 Pruebas de los dulces
+ */
+
 import { availableCandies } from "../Candy";
+
+/*
+ * 🛎 Probar los dulces disponibles
+ */
 
 test("Retrieving all candies for sale", () => {
   expect(availableCandies.length).toBe(3);

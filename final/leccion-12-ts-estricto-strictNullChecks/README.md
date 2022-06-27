@@ -17,13 +17,14 @@ const animales = [
 const perrito = animales.find((animal: any) => animal.nombre === "Odie");
 console.log(perrito.nombre);
 ```
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhmAlgWzgGwKYRgXhgbQCgYYBvGMEZAIwCcMAuGAIgHkATRDZmAXwBpiZClTqMWAcTi0AZlzTseAwgF0A3MUKhIsAA4ZatRFBC54SVJggA6OWHYAKBwhTomCAJ4BKXAD5zrmjWlDT0uDh4bJzcXhraECCY1mggAOYO+obGIMGi9LFAA)!
 
 Este código no se compilará con el error:
 
 ```bash
 const perrito: {
     nombre: string;
-} | undefined
+} | undefined = undefined;
 Object is possibly 'undefined'
 ```
 
@@ -48,6 +49,8 @@ if (perrito) {
    console.log(perrito.nombre);
 }
 ```
+
+> ✨ ¡Prueba este código en [este playground](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhmAlgWzgGwKYRgXhgbQCgYYBvGMEZAIwCcMAuGAIgHkATRDZmAXwBpiZClTqMWAcTi0AZlzTseAwgF0A3MUKhIsAA4ZatRFBC54SVJggA6OWHYAKBwhTomCAJ4BKXAD5zrmjWlDT0uDh4bJzcXhqIMjAO+obGID6kQjDaECCY1mggAOZJBkYmwaL0sYS8QA)!
 
 Ahora funciona sin problemas
 

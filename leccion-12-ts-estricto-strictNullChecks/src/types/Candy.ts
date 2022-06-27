@@ -1,3 +1,7 @@
+/*
+ * 👇 Clase abstracta y subclases para los dulces. Tienen un nombre y precio.
+ */
+
 export abstract class Candy {
     abstract priceCents(): any;
     abstract name(): any;
@@ -30,6 +34,7 @@ class ExtraChocolate extends Candy {
     }
 }
 
+// 🛎 Todos los dulces
 export const availableCandies = [
     new Chocolate(),
     new NotSoChocolate(),

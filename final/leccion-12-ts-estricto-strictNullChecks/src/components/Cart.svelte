@@ -1,4 +1,7 @@
 <script lang="ts">
+/*
+ * 👇 Componente para los items en el carrito.
+ */
   export let items: any[];
   export let amount: any;
   export let total: any;
@@ -26,26 +29,30 @@
   </table>
 {/if}
 
+<!-- 🛎 Estilos para nuestro componente -->
+  
 <style>
-    table {
-        margin-top: 1em;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    th {
-        background-color: black;
-        color: white;
-    }
-    td {
-        text-align: left;
-    }
-    td.price {
-        text-align: right;
-    }
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 1em;
-    }
+  table {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  th {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+  td {
+    text-align: left;
+  }
+  td.price {
+    text-align: right;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid var(--primary-color);
+    border-collapse: collapse;
+    padding: 1em;
+  }
 </style>

@@ -4,8 +4,8 @@
 
 export abstract class Candy {
 // ❗️ A `priceCents` y `name` les falta tipo. Démosles `any`.
-    abstract priceCents(): any;
-    abstract name(): any;
+    abstract priceCents();
+    abstract name();
 }
 
 class Chocolate extends Candy {

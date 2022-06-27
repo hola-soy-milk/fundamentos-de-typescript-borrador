@@ -4,9 +4,9 @@
  */
 
 // ❗️ A `items`, `amount` y `total` les falta tipo. Démosles `any[]` a `items` y `any` al resto.
-  export let items: any[];
-  export let amount: any;
-  export let total: any;
+  export let items;
+  export let amount;
+  export let total;
 </script>
 
 {#if items.length}

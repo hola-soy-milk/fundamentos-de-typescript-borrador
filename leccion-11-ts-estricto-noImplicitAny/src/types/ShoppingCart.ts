@@ -5,7 +5,7 @@
 export default class ShoppingCart {
 // 🛎 Tenemos una propiedad opcional de items de carrito
 // ❗️ A `items` le falta tipo. Démosle `any[]`
-    items?: any[];
+    items?;
 
 // 🛎 Crear un ShoppingCart con un arreglo de items vacío
     constructor() {
@@ -14,7 +14,7 @@ export default class ShoppingCart {
 
 // 🛎 Agregar un item
 // ❗️ A `item` le falta tipo. Démosle `any`
-    addItem(item: any) {
+    addItem(item) {
         if (this.items !== undefined) {
             this.items = [...this.items, item]
         }

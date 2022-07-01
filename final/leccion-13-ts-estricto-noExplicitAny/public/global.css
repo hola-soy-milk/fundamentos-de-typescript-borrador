@@ -1,7 +1,13 @@
+:root {
+	--primary-color: #5E454B;
+	--background-color: #F1F7E7;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	background-color: var(--background-color);
 }
 
 body {

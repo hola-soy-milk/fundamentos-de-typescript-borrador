@@ -1,3 +1,9 @@
+/*
+ * 👇 Tipo para nuestro carrito
+ */
+
+// ❗️ Vamos a usar los GroupedCartItems para describir nuestros `groupedItems`
+// ❗️ Las propiedades necesitan tipos
 export interface GroupedCartItem {
   name: any;
   priceCents: any;
@@ -5,12 +11,15 @@ export interface GroupedCartItem {
 }
 
 export class ShoppingCart {
+// 🛎 Tenemos una propiedad opcional de items de carrito
+// ❗️ Items necesitan un tipo (¡importado!)
   items?: any[];
 
   constructor() {
     this.items = [];
   }
 
+// ❗️ Items necesitan un tipo (¡importado!)
   addItem(item: any) {
     if (this.items !== undefined) {
       this.items = [...this.items, item];
@@ -18,12 +27,15 @@ export class ShoppingCart {
     return this;
   }
 
+// ❗️ Asignemos nuestro nuevo tipo
   groupedItems(): any[] {
     if (!this.items) {
       return [];
     }
+    // ❗️ Necesitamos GroupedCartItem y nuestro item importado
     return this.items.reduce((cartItems: any[], item: any) => {
-      let cartItem: any = cartItems.find(
+    // ❗️ Necesitamos GroupedCartItem y nuestro item importado
+      let cartItem = cartItems.find(
         (elem) => elem.name === item.name()
       );
       if (!cartItem) {

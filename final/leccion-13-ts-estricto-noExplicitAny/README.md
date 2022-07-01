@@ -170,7 +170,7 @@ class TestCandy extends Candy {
   }
 
   priceCents() {
-    return 999;
+    return 100;
   }
 }
 ```

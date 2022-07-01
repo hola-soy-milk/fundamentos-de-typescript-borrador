@@ -1,14 +1,23 @@
 <script lang="ts">
+/*
+ * 👇 Componente principal de nuestra aplicación.
+ */
   import Cart from "./components/Cart.svelte";
   import Menu from "./components/Menu.svelte";
   import type { Candy } from "./types/Candy";
   import { ShoppingCart } from "./types/ShoppingCart";
+/*
+ * 🛎 Variables disponibles en la app. 
+ * Tenemos una instancia de nuestro tipo `ShoppingCart` y una función de callback para añadir un item al `ShoppingCart`
+ */
   let cart = new ShoppingCart();
 
   const addCartItem = (item: Candy) => {
     cart = cart.addItem(item);
   };
 </script>
+
+  <!-- 🛎 Contenido de nuestra aplicación -->
 
 <main>
   <h1>Tienda de dulces!</h1>
@@ -21,6 +30,7 @@
   />
 </main>
 
+  <!-- 🛎 Estilos en nuestro componente -->
 <style>
 	:root {
 	  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,

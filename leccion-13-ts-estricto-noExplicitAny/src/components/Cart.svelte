@@ -1,4 +1,7 @@
 <script lang="ts">
+/*
+ * 👇 Componente para los items en el carrito.
+ */
   import type { GroupedCartItem } from "../types/ShoppingCart";
 
   export let items: GroupedCartItem[];
@@ -28,6 +31,8 @@
   </table>
 {/if}
 
+<!-- 🛎 Estilos para nuestro componente -->
+  
 <style>
     table {
         margin-top: 1em;

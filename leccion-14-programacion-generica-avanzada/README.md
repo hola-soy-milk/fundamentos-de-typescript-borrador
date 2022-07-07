@@ -29,7 +29,7 @@ También vemos que las pruebas usan el `./src/types/__tests__/ShoppingCart.test.
 
 ```typescript
 test("New cart has no items and 0 total", () => {
-  const cart = new ShoppingCart<Big>();
+  const cart = new ShoppingCart<TestCandy>();
   expect(cart.total()).toBe(0);
   expect(cart.items).toEqual([]);
 });

@@ -1,3 +1,8 @@
+/*
+ * 👇 Clase abstracta y subclases para los dulces. Tienen un nombre y precio.
+ */
+
+// ❗️ Candy pasa a ser subclase de CartItemType y le borramos las funciones
 export abstract class Candy {
     abstract priceCents(): number;
     abstract name(): string;

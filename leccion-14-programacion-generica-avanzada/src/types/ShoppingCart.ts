@@ -1,3 +1,8 @@
+/*
+ * 👇 Tipo para nuestro carrito
+ */
+
+// ❗️ La meta es reemplazar Candy con CartItemType
 import type { Candy } from "./Candy";
 
 export interface GroupedCartItem {
@@ -6,13 +11,16 @@ export interface GroupedCartItem {
     quantity: number
 }
 
+// ❗️ Cambiemos el ShoppingCart a que sea genérico de tipo T que sea subclase de CartItemType `T extends CartItemType`
 export class ShoppingCart {
+    // ❗️ Candy pasa a ser T
     items?: Candy[];
 
     constructor() {
         this.items = [];
     }
 
+    // ❗️ Candy pasa a ser T
     addItem(item: Candy) {
         if (this.items !== undefined) {
             this.items = [...this.items, item]
@@ -22,6 +30,7 @@ export class ShoppingCart {
 
     groupedItems() {
         if (this.items) {
+            // ❗️ Candy pasa a ser T
             return this.items.reduce((cartItems: GroupedCartItem[], item: Candy) => {
                 let cartItem: GroupedCartItem | undefined = cartItems.find(e => e.name === item.name());
                 if (!cartItem) {
